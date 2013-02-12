@@ -1,9 +1,10 @@
 <?php
 
-define('SOURCE_CLASSES_PATH', '../classes/');
+define('LOCAL_PATH', __DIR__ . '/');
+define('SOURCE_CLASSES_PATH', LOCAL_PATH . '../classes/');
 define('SOURCE_CLASSES_CORE_PATH', SOURCE_CLASSES_PATH . 'dao/core/');
 define('SOURCE_CLASSES_SQL_PATH', SOURCE_CLASSES_PATH . 'dao/sql/');
-define('SOURCE_TEMPLATES_PATH', 'resources/templates/');
+define('SOURCE_TEMPLATES_PATH', LOCAL_PATH . '../../../../../resources/templates/');
 
 require_once(SOURCE_CLASSES_SQL_PATH . 'class.Connection.php');
 require_once(SOURCE_CLASSES_SQL_PATH . 'class.ConnectionFactory.php');
@@ -13,7 +14,7 @@ require_once(SOURCE_CLASSES_SQL_PATH . 'class.Transaction.php');
 require_once(SOURCE_CLASSES_SQL_PATH . 'class.SqlQuery.php');
 require_once(SOURCE_CLASSES_PATH . 'class.Template.php');
 
-define('OUTPUT_PATH', '../../../../../../output/');
+define('OUTPUT_PATH', LOCAL_PATH . '../../../../../../output/');
 define('CLASSES_PATH', 'classes/');
 define('INTERFACES_PATH', 'interfaces/');
 define('CORE_PATH', CLASSES_PATH . 'core/');
@@ -28,14 +29,14 @@ function generate()
 {
     init();
     $sql = 'SHOW TABLES';
-    $ret = QueryExecutor::execute(new SqlQuery($sql));
-    generateDTOObjects($ret);
-    generateDTOExtObjects($ret);
-    generateDAOObjects($ret);
-    generateDAOExtObjects($ret);
-    generateIDAOObjects($ret);
-    createIncludeFile($ret);
-    createDAOFactory($ret);
+    $tablesArray = QueryExecutor::execute(new SqlQuery($sql));
+    generateDTOObjects($tablesArray);
+    generateDTOExtObjects($tablesArray);
+    generateDAOObjects($tablesArray);
+    generateDAOExtObjects($tablesArray);
+    generateIDAOObjects($tablesArray);
+    createIncludeFile($tablesArray);
+    createDAOFactory($tablesArray);
 }
 
 function init()
@@ -59,16 +60,15 @@ function init()
     copy(SOURCE_CLASSES_SQL_PATH . 'class.SqlQuery.php', OUTPUT_PATH . SQL_PATH . 'class.SqlQuery.php');
 }
 
-function createIncludeFile($ret)
+/**
+ * @param array $tables
+ */
+function createIncludeFile($tables)
 {
     $str = "\n";
-    for ($i = 0; $i < count($ret); $i++)
+    for ($i = 0; $i < count($tables); $i++)
     {
-        $tableName = $ret[$i][0];
-        if (!doesTableContainPK($ret[$i]))
-        {
-            continue;
-        }
+        $tableName = $tables[$i][0];
         $tableClassBase = getClassName($tableName);
         $tableDAOName = $tableClassBase . 'DAO';
         $tableDAOExtName = $tableDAOName . 'Ext';
@@ -86,12 +86,16 @@ function createIncludeFile($ret)
     $template->write(OUTPUT_PATH . 'include_dao.php');
 }
 
-function doesTableContainPK($row)
+/**
+ * @param string $tableName
+ * @return bool
+ */
+function doesTableContainPK($tableName)
 {
-    $row = getFields($row[0]);
-    for ($j = 0; $j < count($row); $j++)
+    $fieldArray = getFields($tableName);
+    for ($j = 0; $j < count($fieldArray); $j++)
     {
-        if ($row[$j][3] == 'PRI')
+        if ($fieldArray[$j][3] == 'PRI')
         {
             return true;
         }
@@ -99,16 +103,12 @@ function doesTableContainPK($row)
     return false;
 }
 
-function createDAOFactory($ret)
+function createDAOFactory($tables)
 {
     $str = "\n";
-    for ($i = 0; $i < count($ret); $i++)
+    for ($i = 0; $i < count($tables); $i++)
     {
-        if (!doesTableContainPK($ret[$i]))
-        {
-            continue;
-        }
-        $tableName = $ret[$i][0];
+        $tableName = $tables[$i][0];
         $tableClassBase = getClassName($tableName);
         $tableDAOName = $tableClassBase . 'DAO';
         $tableDAOExtName = $tableDAOName . 'Ext';
@@ -126,17 +126,13 @@ function createDAOFactory($ret)
 }
 
 /**
- * @param array $ret
+ * @param array $tables
  */
-function generateDTOExtObjects($ret)
+function generateDTOExtObjects($tables)
 {
-    for ($i = 0; $i < count($ret); $i++)
+    for ($i = 0; $i < count($tables); $i++)
     {
-        if (!doesTableContainPK($ret[$i]))
-        {
-            continue;
-        }
-        $tableName = $ret[$i][0];
+        $tableName = $tables[$i][0];
         $tableClassBase = getClassName($tableName);
         if ($tableClassBase[strlen($tableClassBase) - 1] == 's')
         {
@@ -158,17 +154,13 @@ function generateDTOExtObjects($ret)
 }
 
 /**
- * @param array $ret
+ * @param array $tables
  */
-function generateDTOObjects($ret)
+function generateDTOObjects($tables)
 {
-    for ($i = 0; $i < count($ret); $i++)
+    for ($i = 0; $i < count($tables); $i++)
     {
-        if (!doesTableContainPK($ret[$i]))
-        {
-            continue;
-        }
-        $tableName = $ret[$i][0];
+        $tableName = $tables[$i][0];
         $tableClassBase = getClassName($tableName);
         if ($tableClassBase[strlen($tableClassBase) - 1] == 's')
         {
@@ -178,11 +170,11 @@ function generateDTOObjects($ret)
         $template = new Template(SOURCE_TEMPLATES_PATH . 'DTO.tpl');
         $template->setPair('class_name', $tableDTOName);
         $template->setPair('table_name', $tableName);
-        $tab = getFields($tableName);
+        $fieldArray = getFields($tableName);
         $fields = "\r\n";
-        for ($j = 0; $j < count($tab); $j++)
+        for ($j = 0; $j < count($fieldArray); $j++)
         {
-            $fields .= "\t\tvar $" . getVarNameWithS($tab[$j][0]) . ";\n\r";
+            $fields .= "\t\tvar $" . getVarNameWithS($fieldArray[$j][0]) . ";\n\r";
         }
         $template->setPair('variables', $fields);
         $template->setPair('date', date("Y-m-d H:i"));
@@ -191,17 +183,13 @@ function generateDTOObjects($ret)
 }
 
 /**
- * @param array $ret
+ * @param array $tables
  */
-function generateDAOExtObjects($ret)
+function generateDAOExtObjects($tables)
 {
-    for ($i = 0; $i < count($ret); $i++)
+    for ($i = 0; $i < count($tables); $i++)
     {
-        if (!doesTableContainPK($ret[$i]))
-        {
-            continue;
-        }
-        $tableName = $ret[$i][0];
+        $tableName = $tables[$i][0];
         $tableClassBase = getClassName($tableName);
         $tableDAOName = $tableClassBase . 'DAO';
         $tableDAOExtName = $tableDAOName . 'Ext';
@@ -220,24 +208,21 @@ function generateDAOExtObjects($ret)
 }
 
 /**
- * @param array $ret
+ * @param array $tables
  */
-function generateDAOObjects($ret)
+function generateDAOObjects($tables)
 {
-    for ($i = 0; $i < count($ret); $i++)
+    for ($i = 0; $i < count($tables); $i++)
     {
-        if (!doesTableContainPK($ret[$i]))
-        {
-            continue;
-        }
-        $tableName = $ret[$i][0];
+        $tableName = $tables[$i][0];
         $tableClassBase = getClassName($tableName);
         $tableDAOName = $tableClassBase . 'DAO';
         $tableDAOInterfaceName = 'i' . $tableDAOName;
         $tableDTOName = $tableClassBase . 'DTO';
         $tableDTOExtName = $tableDTOName . 'Ext';
         $tableDTOVariableName = 'a' . $tableDTOName;
-        $tab = getFields($tableName);
+        $hasPK = doesTableContainPK($tableName);
+        $fieldArray = getFields($tableName);
         $parameterSetter = "\n";
         $insertFields = "";
         $updateFields = "";
@@ -248,64 +233,67 @@ function generateDAOObjects($ret)
         $queryByField = '';
         $deleteByField = '';
         $pk_type = '';
-        for ($j = 0; $j < count($tab); $j++)
+        for ($j = 0; $j < count($fieldArray); $j++)
         {
-            if ($tab[$j][3] == 'PRI')
+            if ($fieldArray[$j][3] == 'PRI')
             {
-                $pk = $tab[$j][0];
+                $pk = $fieldArray[$j][0];
                 $c = count($pks);
-                $pks[$c] = $tab[$j][0];
-                $pk_type = $tab[$j][1];
+                $pks[$c] = $fieldArray[$j][0];
+                $pk_type = $fieldArray[$j][1];
             } else
             {
-                $insertFields .= $tab[$j][0] . ", ";
-                $updateFields .= $tab[$j][0] . " = ?, ";
+                $insertFields .= $fieldArray[$j][0] . ", ";
+                $updateFields .= $fieldArray[$j][0] . " = ?, ";
                 $questionMarks .= "?, ";
-                if (isColumnTypeNumber($tab[$j][1]))
+                if (isColumnTypeNumber($fieldArray[$j][1]))
                 {
-                    $parameterSetter .= "\t\t\$sqlQuery->setNumber($" . $tableDTOVariableName . "->" . getVarNameWithS($tab[$j][0]) . ");\n";
+                    $parameterSetter .= "\t\t\$sqlQuery->setNumber($" . $tableDTOVariableName . "->" . getVarNameWithS($fieldArray[$j][0]) . ");\n";
                 } else
                 {
-                    $parameterSetter .= "\t\t\$sqlQuery->set($" . $tableDTOVariableName . "->" . getVarNameWithS($tab[$j][0]) . ");\n";
+                    $parameterSetter .= "\t\t\$sqlQuery->set($" . $tableDTOVariableName . "->" . getVarNameWithS($fieldArray[$j][0]) . ");\n";
                 }
                 $parameterSetter2 = '';
-                if (isColumnTypeNumber($tab[$j][1]))
+                if (isColumnTypeNumber($fieldArray[$j][1]))
                 {
                     $parameterSetter2 .= "Number";
                 }
-                $queryByField .= "	public function queryBy" . getClassName($tab[$j][0]) . "(\$value){
-		\$sql = 'SELECT * FROM " . $tableName . " WHERE " . $tab[$j][0] . " = ?';
+                $queryByField .= "	public function queryBy" . getClassName($fieldArray[$j][0]) . "(\$value){
+		\$sql = 'SELECT * FROM " . $tableName . " WHERE " . $fieldArray[$j][0] . " = ?';
 		\$sqlQuery = new SqlQuery(\$sql);
 		\$sqlQuery->set" . $parameterSetter2 . "(\$value);
 		return \$this->getList(\$sqlQuery);
 	}\n\n";
-                $deleteByField .= "	public function deleteBy" . getClassName($tab[$j][0]) . "(\$value){
-		\$sql = 'DELETE FROM " . $tableName . " WHERE " . $tab[$j][0] . " = ?';
+                $deleteByField .= "	public function deleteBy" . getClassName($fieldArray[$j][0]) . "(\$value){
+		\$sql = 'DELETE FROM " . $tableName . " WHERE " . $fieldArray[$j][0] . " = ?';
 		\$sqlQuery = new SqlQuery(\$sql);
 		\$sqlQuery->set" . $parameterSetter2 . "(\$value);
 		return \$this->executeUpdate(\$sqlQuery);
 	}\n\n";
             }
-            $readRow .= "\t\t\$" . $tableDTOVariableName . "->" . getVarNameWithS($tab[$j][0]) . " = \$row['" . $tab[$j][0] . "'];\n";
+            $readRow .= "\t\t\$" . $tableDTOVariableName . "->" . getVarNameWithS($fieldArray[$j][0]) . " = \$row['" . $fieldArray[$j][0] . "'];\n";
         }
-        if ($pk == '')
+        if ($hasPK)
         {
-            continue;
-        }
-        if (count($pks) == 1)
-        {
-            $template = new Template(SOURCE_TEMPLATES_PATH . 'DAO.tpl');
-            echo '$pk_type ' . $pk_type . '<br/>';
-            if (isColumnTypeNumber($pk_type))
+            if (count($pks) == 1)
             {
-                $template->setPair('pk_number', 'Number');
+                $template = new Template(SOURCE_TEMPLATES_PATH . 'DAO.tpl');
+                echo '$pk_type ' . $pk_type . '<br/>';
+                if (isColumnTypeNumber($pk_type))
+                {
+                    $template->setPair('pk_number', 'Number');
+                } else
+                {
+                    $template->setPair('pk_number', '');
+                }
             } else
             {
-                $template->setPair('pk_number', '');
+                $template = new Template(SOURCE_TEMPLATES_PATH . 'DAO_with_complex_pk.tpl');
             }
-        } else
+        }
+        else
         {
-            $template = new Template(SOURCE_TEMPLATES_PATH . 'DAO_with_complex_pk.tpl');
+            $template = new Template(SOURCE_TEMPLATES_PATH . 'DAOView.tpl');
         }
         $template->setPair('class_name', $tableDAOName);
         $template->setPair('dto_name', $tableDTOExtName);
@@ -374,22 +362,19 @@ function isColumnTypeNumber($columnType)
     return false;
 }
 
-function generateIDAOObjects($ret)
+function generateIDAOObjects($tables)
 {
-    for ($i = 0; $i < count($ret); $i++)
+    for ($i = 0; $i < count($tables); $i++)
     {
-        if (!doesTableContainPK($ret[$i]))
-        {
-            continue;
-        }
-        $tableName = $ret[$i][0];
+        $tableName = $tables[$i][0];
         $tableClassBase = getClassName($tableName);
         $tableDAOName = $tableClassBase . 'DAO';
         $tableIDAOName = 'i' . $tableDAOName;
         $tableDTOName = $tableClassBase . 'DTO';
         $tableDTOExtName = $tableDTOName . 'Ext';
         $tableDTOVariableName = 'a' . $tableDTOExtName;
-        $tab = getFields($tableName);
+        $hasPK = doesTableContainPK($tableName);
+        $fieldArray = getFields($tableName);
         $parameterSetter = "\n";
         $insertFields = "";
         $updateFields = "";
@@ -399,41 +384,44 @@ function generateIDAOObjects($ret)
         $pks = array();
         $queryByField = '';
         $deleteByField = '';
-        for ($j = 0; $j < count($tab); $j++)
+        for ($j = 0; $j < count($fieldArray); $j++)
         {
-            if ($tab[$j][3] == 'PRI')
+            if ($fieldArray[$j][3] == 'PRI')
             {
-                $pk = $tab[$j][0];
+                $pk = $fieldArray[$j][0];
                 $c = count($pks);
-                $pks[$c] = $tab[$j][0];
+                $pks[$c] = $fieldArray[$j][0];
             } else
             {
-                $insertFields .= $tab[$j][0] . ", ";
-                $updateFields .= $tab[$j][0] . " = ?, ";
+                $insertFields .= $fieldArray[$j][0] . ", ";
+                $updateFields .= $fieldArray[$j][0] . " = ?, ";
                 $questionMarks .= "?, ";
-                if (isColumnTypeNumber($tab[$j][1]))
+                if (isColumnTypeNumber($fieldArray[$j][1]))
                 {
-                    $parameterSetter .= "\t\t\$sqlQuery->setNumber($" . getVarName($tableName) . "->" . getVarNameWithS($tab[$j][0]) . ");\n";
+                    $parameterSetter .= "\t\t\$sqlQuery->setNumber($" . getVarName($tableName) . "->" . getVarNameWithS($fieldArray[$j][0]) . ");\n";
                 } else
                 {
-                    $parameterSetter .= "\t\t" . '$sqlQuery->set($' . getVarName($tab[$j][0]) . ');' . "\n";
+                    $parameterSetter .= "\t\t" . '$sqlQuery->set($' . getVarName($fieldArray[$j][0]) . ');' . "\n";
                 }
-                $queryByField .= "\tpublic function queryBy" . getClassName($tab[$j][0]) . "(\$value);\n\n";
-                $deleteByField .= "\tpublic function deleteBy" . getClassName($tab[$j][0]) . "(\$value);\n\n";
+                $queryByField .= "\tpublic function queryBy" . getClassName($fieldArray[$j][0]) . "(\$value);\n\n";
+                $deleteByField .= "\tpublic function deleteBy" . getClassName($fieldArray[$j][0]) . "(\$value);\n\n";
             }
-            $readRow .= "\t\t\$" . getVarName($tableName) . "->" . getVarNameWithS($tab[$j][0]) . " = \$row['" . $tab[$j][0] . "'];\n";
-        }
-        if ($pk == '')
-        {
-            continue;
+            $readRow .= "\t\t\$" . getVarName($tableName) . "->" . getVarNameWithS($fieldArray[$j][0]) . " = \$row['" . $fieldArray[$j][0] . "'];\n";
         }
 
-        if (count($pks) == 1)
+        if ($hasPK)
         {
-            $template = new Template(SOURCE_TEMPLATES_PATH . 'IDAO.tpl');
-        } else
+            if (count($pks) == 1)
+            {
+                $template = new Template(SOURCE_TEMPLATES_PATH . 'IDAO.tpl');
+            } else
+            {
+                $template = new Template(SOURCE_TEMPLATES_PATH . 'IDAO_with_complex_pk.tpl');
+            }
+        }
+        else
         {
-            $template = new Template(SOURCE_TEMPLATES_PATH . 'IDAO_with_complex_pk.tpl');
+            $template = new Template(SOURCE_TEMPLATES_PATH . 'IDAOView.tpl');
         }
 
         $template->setPair('class_name', $tableIDAOName);
@@ -489,10 +477,14 @@ function generateIDAOObjects($ret)
     }
 }
 
-
+/**
+ * @param string $table
+ * @return array
+ */
 function getFields($table)
 {
     $sql = 'DESC ' . $table;
+    error_log($sql);
     return QueryExecutor::execute(new SqlQuery($sql));
 }
 
@@ -548,15 +540,7 @@ function getVarNameWithS($tableName)
             $tableName = substr($tableName, 0, $i) . strtoupper($tableName[$i + 1]) . substr($tableName, $i + 2);
         }
     }
-    //if($tableName[strlen($tableName)-1]=='s'){
-    //	$tableName = substr($tableName, 0, strlen($tableName)-1);
-    //}
     return $tableName;
 }
-
-
-generate();
-
-
 
 ?>
