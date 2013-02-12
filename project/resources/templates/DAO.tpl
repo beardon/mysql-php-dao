@@ -15,7 +15,7 @@
 class ${class_name} implements ${interface_name} {
 
 	/**
-	 * Get Domain object by primry key
+	 * Get DTO object by primary key
 	 *
 	 * @param string $id primary key
 	 * @return ${dto_name} 
