@@ -1,14 +1,19 @@
 <?php
 
-require_once('templates/class/dao/sql/class.Connection.php');
-require_once('templates/class/dao/sql/class.ConnectionFactory.php');
-require_once('templates/class/dao/sql/class.ConnectionProperty.php');
-require_once('templates/class/dao/sql/class.QueryExecutor.php');
-require_once('templates/class/dao/sql/class.Transaction.php');
-require_once('templates/class/dao/sql/class.SqlQuery.php');
-require_once('templates/class/Template.php');
+define('SOURCE_CLASSES_PATH', '../classes/');
+define('SOURCE_CLASSES_CORE_PATH', SOURCE_CLASSES_PATH . 'dao/core/');
+define('SOURCE_CLASSES_SQL_PATH', SOURCE_CLASSES_PATH . 'dao/sql/');
+define('SOURCE_TEMPLATES_PATH', 'resources/templates/');
 
-define('GENERATED_PATH', 'generated/');
+require_once(SOURCE_CLASSES_SQL_PATH . 'class.Connection.php');
+require_once(SOURCE_CLASSES_SQL_PATH . 'class.ConnectionFactory.php');
+require_once(SOURCE_CLASSES_SQL_PATH . 'class.ConnectionProperty.php');
+require_once(SOURCE_CLASSES_SQL_PATH . 'class.QueryExecutor.php');
+require_once(SOURCE_CLASSES_SQL_PATH . 'class.Transaction.php');
+require_once(SOURCE_CLASSES_SQL_PATH . 'class.SqlQuery.php');
+require_once(SOURCE_CLASSES_PATH . 'class.Template.php');
+
+define('OUTPUT_PATH', '../../../../../../output/');
 define('CLASSES_PATH', 'classes/');
 define('INTERFACES_PATH', 'interfaces/');
 define('CORE_PATH', CLASSES_PATH . 'core/');
@@ -18,10 +23,6 @@ define('DTO_PATH', CLASSES_PATH . 'dto/');
 define('DTO_EXT_PATH', DTO_PATH . 'ext/');
 define('IDAO_PATH', INTERFACES_PATH . 'dao/');
 define('SQL_PATH', CLASSES_PATH . 'sql/');
-define('SOURCE_CLASSES_PATH', 'templates/class/');
-define('SOURCE_CLASSES_CORE_PATH', SOURCE_CLASSES_PATH . 'dao/core/');
-define('SOURCE_CLASSES_SQL_PATH', SOURCE_CLASSES_PATH . 'dao/sql/');
-define('SOURCE_TEMPLATES_PATH', 'templates/');
 
 function generate()
 {
@@ -39,23 +40,23 @@ function generate()
 
 function init()
 {
-    @mkdir(GENERATED_PATH);
-    @mkdir(GENERATED_PATH . CLASSES_PATH);
-    @mkdir(GENERATED_PATH . CORE_PATH);
-    @mkdir(GENERATED_PATH . DAO_PATH);
-    @mkdir(GENERATED_PATH . DAO_EXT_PATH);
-    @mkdir(GENERATED_PATH . DTO_PATH);
-    @mkdir(GENERATED_PATH . DTO_EXT_PATH);
-    @mkdir(GENERATED_PATH . SQL_PATH);
-    @mkdir(GENERATED_PATH . INTERFACES_PATH);
-    @mkdir(GENERATED_PATH . IDAO_PATH);
-    copy(SOURCE_CLASSES_CORE_PATH . 'class.ArrayList.php', GENERATED_PATH . CORE_PATH . 'class.ArrayList.php');
-    copy(SOURCE_CLASSES_SQL_PATH . 'class.Connection.php', GENERATED_PATH . SQL_PATH . 'class.Connection.php');
-    copy(SOURCE_CLASSES_SQL_PATH . 'class.ConnectionFactory.php', GENERATED_PATH . SQL_PATH . 'class.ConnectionFactory.php');
-    copy(SOURCE_CLASSES_SQL_PATH . 'class.ConnectionProperty.php', GENERATED_PATH . SQL_PATH . 'class.ConnectionProperty.php');
-    copy(SOURCE_CLASSES_SQL_PATH . 'class.QueryExecutor.php', GENERATED_PATH . SQL_PATH . 'class.QueryExecutor.php');
-    copy(SOURCE_CLASSES_SQL_PATH . 'class.Transaction.php', GENERATED_PATH . SQL_PATH . 'class.Transaction.php');
-    copy(SOURCE_CLASSES_SQL_PATH . 'class.SqlQuery.php', GENERATED_PATH . SQL_PATH . 'class.SqlQuery.php');
+    @mkdir(OUTPUT_PATH);
+    @mkdir(OUTPUT_PATH . CLASSES_PATH);
+    @mkdir(OUTPUT_PATH . CORE_PATH);
+    @mkdir(OUTPUT_PATH . DAO_PATH);
+    @mkdir(OUTPUT_PATH . DAO_EXT_PATH);
+    @mkdir(OUTPUT_PATH . DTO_PATH);
+    @mkdir(OUTPUT_PATH . DTO_EXT_PATH);
+    @mkdir(OUTPUT_PATH . SQL_PATH);
+    @mkdir(OUTPUT_PATH . INTERFACES_PATH);
+    @mkdir(OUTPUT_PATH . IDAO_PATH);
+    copy(SOURCE_CLASSES_CORE_PATH . 'class.ArrayList.php', OUTPUT_PATH . CORE_PATH . 'class.ArrayList.php');
+    copy(SOURCE_CLASSES_SQL_PATH . 'class.Connection.php', OUTPUT_PATH . SQL_PATH . 'class.Connection.php');
+    copy(SOURCE_CLASSES_SQL_PATH . 'class.ConnectionFactory.php', OUTPUT_PATH . SQL_PATH . 'class.ConnectionFactory.php');
+    copy(SOURCE_CLASSES_SQL_PATH . 'class.ConnectionProperty.php', OUTPUT_PATH . SQL_PATH . 'class.ConnectionProperty.php');
+    copy(SOURCE_CLASSES_SQL_PATH . 'class.QueryExecutor.php', OUTPUT_PATH . SQL_PATH . 'class.QueryExecutor.php');
+    copy(SOURCE_CLASSES_SQL_PATH . 'class.Transaction.php', OUTPUT_PATH . SQL_PATH . 'class.Transaction.php');
+    copy(SOURCE_CLASSES_SQL_PATH . 'class.SqlQuery.php', OUTPUT_PATH . SQL_PATH . 'class.SqlQuery.php');
 }
 
 function createIncludeFile($ret)
@@ -82,7 +83,7 @@ function createIncludeFile($ret)
     }
     $template = new Template(SOURCE_TEMPLATES_PATH . 'include_dao.tpl');
     $template->setPair('include', $str);
-    $template->write(GENERATED_PATH . 'include_dao.php');
+    $template->write(OUTPUT_PATH . 'include_dao.php');
 }
 
 function doesTableContainPK($row)
@@ -121,7 +122,7 @@ function createDAOFactory($ret)
     $template = new Template(SOURCE_TEMPLATES_PATH . 'DAOFactory.tpl');
     $template->setPair('content', $str);
     $template->setPair('date', date("Y-m-d H:i"));
-    $template->write(GENERATED_PATH . DAO_PATH . 'class.DAOFactory.php');
+    $template->write(OUTPUT_PATH . DAO_PATH . 'class.DAOFactory.php');
 }
 
 /**
@@ -148,7 +149,7 @@ function generateDTOExtObjects($ret)
         $template->setPair('ancestor_class_name', $tableDTOName);
         $template->setPair('table_name', $tableName);
         $template->setPair('date', date("Y-m-d H:i"));
-        $file = GENERATED_PATH . DTO_EXT_PATH . 'class.' . $tableDTOExtName . '.php';
+        $file = OUTPUT_PATH . DTO_EXT_PATH . 'class.' . $tableDTOExtName . '.php';
         if (!file_exists($file))
         {
             $template->write($file);
@@ -185,7 +186,7 @@ function generateDTOObjects($ret)
         }
         $template->setPair('variables', $fields);
         $template->setPair('date', date("Y-m-d H:i"));
-        $template->write(GENERATED_PATH . DTO_PATH . 'class.' . $tableDTOName . '.php');
+        $template->write(OUTPUT_PATH . DTO_PATH . 'class.' . $tableDTOName . '.php');
     }
 }
 
@@ -210,7 +211,7 @@ function generateDAOExtObjects($ret)
         $template->setPair('table_name', $tableName);
         $template->setPair('var_name', getVarName($tableName));
         $template->setPair('date', date("Y-m-d H:i"));
-        $file = GENERATED_PATH . DAO_EXT_PATH . 'class.' . $tableDAOExtName . '.php';
+        $file = OUTPUT_PATH . DAO_EXT_PATH . 'class.' . $tableDAOExtName . '.php';
         if (!file_exists($file))
         {
             $template->write($file);
@@ -359,7 +360,7 @@ function generateDAOObjects($ret)
         $template->setPair('date', date("Y-m-d H:i"));
         $template->setPair('queryByFieldFunctions', $queryByField);
         $template->setPair('deleteByFieldFunctions', $deleteByField);
-        $template->write(GENERATED_PATH . DAO_PATH . 'class.' . $tableDAOName . '.php');
+        $template->write(OUTPUT_PATH . DAO_PATH . 'class.' . $tableDAOName . '.php');
     }
 }
 
@@ -484,7 +485,7 @@ function generateIDAOObjects($ret)
         $template->setPair('date', date("Y-m-d H:i"));
         $template->setPair('queryByFieldFunctions', $queryByField);
         $template->setPair('deleteByFieldFunctions', $deleteByField);
-        $template->write(GENERATED_PATH . IDAO_PATH . 'interface.' . $tableIDAOName . '.php');
+        $template->write(OUTPUT_PATH . IDAO_PATH . 'interface.' . $tableIDAOName . '.php');
     }
 }
 
