@@ -168,4 +168,3 @@ ${deleteByFieldFunctions}
 		return QueryExecutor::executeInsert($sqlQuery);
 	}
 }
-?>

@@ -2,13 +2,770 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0533e961-d09c-461e-a625-fb8905041a62" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/org/cakephp/lib/Cake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/org/cakephp/lib/Cake/Utility" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/org/cakephp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/org/cakephp/lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/org" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/org/cakephp/lib/Cake/Utility/Inflector.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/libraries/lib.Generator.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/libraries/lib.Generator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DAO.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAO.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DAOExt.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAOExt.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DAOFactory.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAOFactory.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DAOView.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAOView.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DAO_with_complex_pk.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAO_with_complex_pk.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DTO.tpl" afterPath="$PROJECT_DIR$/resources/templates/DTO.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DTOExt.tpl" afterPath="$PROJECT_DIR$/resources/templates/DTOExt.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/IDAO.tpl" afterPath="$PROJECT_DIR$/resources/templates/IDAO.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/IDAOView.tpl" afterPath="$PROJECT_DIR$/resources/templates/IDAOView.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/IDAO_with_complex_pk.tpl" afterPath="$PROJECT_DIR$/resources/templates/IDAO_with_complex_pk.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/include_dao.tpl" afterPath="$PROJECT_DIR$/resources/templates/include_dao.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
     </list>
     <ignored path="PHPDAO.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/lib.Generator.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360695249584" ignored="false" />
-    <file path="/a.dummy" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360695340162" ignored="false" />
+    <file path="/lib.Generator.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360703898332" ignored="false" />
+    <file path="/a.dummy" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360780502140" ignored="false" />
+    <file path="/generate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776021309" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.AccountbudgetDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/report/student_transcript.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709809936" ignored="false" />
+    <file path="/student_transcript.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709499478" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/class.PersonHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360781299222" ignored="false" />
+    <file path="/class.PersonHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360781287111" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OrganizationmembershipDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="/class.OrganizationmembershipDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360706889119" ignored="false" />
+    <file path="/class.Generator.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360781197120" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/class.RegistrationHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360708943998" ignored="false" />
+    <file path="/class.RegistrationHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360708687910" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/class.EventHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709006924" ignored="false" />
+    <file path="/lib.EventHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360708900998" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/lib.EventHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360708900998" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/lib.EventDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360708906870" ignored="false" />
+    <file path="/class.EventHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360708998907" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/class.CourseHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709240246" ignored="false" />
+    <file path="/lib.CourseHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709036213" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/lib.CourseHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709036213" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/lib.CourseDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709039797" ignored="false" />
+    <file path="/lib.CourseDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709039461" ignored="false" />
+    <file path="/class.CourseHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709079018" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CoordcategoryDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferencetemplateDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferencetemplatecourseDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferenceeventDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferenceDownloadsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709723716" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferenceDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ChangelogDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CertificationsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709723717" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CertificationLevelsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709723717" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CertificationLevelRequirementsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709723717" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CertificationAccreditorsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223180" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CertificateDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.BaselineDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.AuthlogDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.AuthenticationTypesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223180" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ApproveTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ApproveDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.AdditionalqualificationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.AdditionalprerequisiteDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.AdditionalexpenseDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.AccountmanagerDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CoursepacketDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CourselevelDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CourseinstructorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CourseFeaturesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223180" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CourseEquipmentDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CourseDownloadsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CourseDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CoursecategoryDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CourseAssignmentsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709723717" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CountrySubdivisionsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709723717" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CountriesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CoordinatorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FacebookDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventsupportDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventstagingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventnoteTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventnoteDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventmileageDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventinstructorTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventinstructorstagingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventinstructorpaymentDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventinstructorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventAssignmentsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223180" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EmsinstructorupdateDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EmailtrackingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EmailreasonDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EmailDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EmailccDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.DisciplineDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.DAOFactory.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CredittypeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CourseStandardsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709723717" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CoursequalificationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FieldtripDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FieldcontactDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FeetypeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FeescheduleTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FeeschedulestagingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FeescheduledefaultDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FeescheduleDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FbmtransactionDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.MailinglistDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.LxrstudentresponsesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.LxrscoretestsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.LxrscoresDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709723717" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.LxrscorepreferencesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.LxrdemographictitlesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.LxrdemographicsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.LogLevelsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.LogDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.LocationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.KeytopicDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.InstructorqualificationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.InstructorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.InstructorcategoryDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.HeartbeatDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.GranttypeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.GradetypeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FundingtypeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FriendlyfieldDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OrgmembershiphistoryDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OrganizationdisciplineDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OrganizationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OprightDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OnlineregistrationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.Onlineform10DAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.Onlineform10attendeeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.MeetingTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.MeetingstagingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.MeetingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.MailinglistsubscriberDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.StatisticDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.SettingsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709723718" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.SessionsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709723718" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RoleoprightDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RoleDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RespiratorFitTestsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ReportDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RegistrationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RegionDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.QualificationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ProxyDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PrerequisiteDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PersondisciplineDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PersonDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PaymentmethodDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PaymentdisbursementDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PaymentDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PaymentauthorizationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.VehicleDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.UsersDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.UserroleDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.TweetDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.TokenDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.TaxcreditDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.TablemappingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.SuffixDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.SubcoderangeminorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.SubcoderangemajorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.SubcodegroupmapDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.SubcodegroupDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.SubcodeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ZipcodesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.XxwebsessionDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.XxpaymentdispersalDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.XxonlineregDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.XxinvoiceitemDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.Xxinvoiceitem2DAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.XxinvoiceDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.Xxinvoice2DAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.XxapprovestampDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.WaitinglistDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/report/student_transcript2.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709780755" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/include_dao.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710021367" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OrgmembershiphistoryviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PaymenteventtotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FeeschedulestagingviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.VPeopleLiteDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.InstructorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CertificationprerequisiteviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.VehicleviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RoleoprightviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventdisciplinecountviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RegistrationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ExpensetotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.QualificationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CoursequalificationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OrganizationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.VPersonMatchDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PaymenttotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PrerequisiteviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventorganizationcountviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.VUsersDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710223181" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.UserroleviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CoordinatorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FbmtransactionviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventinstructortotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PersonliteviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RegistrationorganizationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OrganizationmembershipviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventmileageviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventaddlinstructorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.InstructorqualificationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventinstructorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferenceeventfeeviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventleadinstructorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventoccupationcountviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RegistrationcountviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FeescheduledefaultviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.MeetingviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferencemeetingcapviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.MailinglistsubscriberviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CoordcategoryviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.Onlineform10viewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iAccountbudgetDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iAccountmanagerDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iAdditionalexpenseDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iAdditionalprerequisiteDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iAdditionalqualificationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iApproveDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iApproveTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iAuthenticationTypesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972283" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iAuthlogDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iBaselineDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCertificateDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCertificationAccreditorsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972283" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCertificationLevelRequirementsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972283" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCertificationLevelsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972283" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCertificationsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972283" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iChangelogDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferenceDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferenceDownloadsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferenceeventDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferencetemplatecourseDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferencetemplateDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCoordcategoryDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCoordinatorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCountriesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCountrySubdivisionsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCourseAssignmentsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCoursecategoryDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCourseDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCourseDownloadsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCourseEquipmentDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCourseFeaturesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCourseinstructorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCourselevelDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCoursepacketDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCoursequalificationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCourseStandardsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCredittypeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iDisciplineDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEmailccDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEmailDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEmailreasonDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEmailtrackingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEmsinstructorupdateDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventAssignmentsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventinstructorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventinstructorpaymentDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventinstructorstagingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventinstructorTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventmileageDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventnoteDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventnoteTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventstagingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventsupportDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFacebookDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFbmtransactionDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFeescheduleDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFeescheduledefaultDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFeeschedulestagingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556342" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFeescheduleTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFeetypeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFieldcontactDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFieldtripDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFriendlyfieldDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFundingtypeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iGradetypeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iGranttypeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iHeartbeatDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iInstructorcategoryDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iInstructorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iInstructorqualificationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iKeytopicDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iLocationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iLogDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iLogLevelsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iLxrdemographicsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iLxrdemographictitlesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iLxrscorepreferencesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iLxrscoresDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iLxrscoretestsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iLxrstudentresponsesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iMailinglistDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iMailinglistsubscriberDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iMeetingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iMeetingstagingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iMeetingTrashDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOnlineform10attendeeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOnlineform10DAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOnlineregistrationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOprightDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOrganizationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOrganizationdisciplineDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOrganizationmembershipDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOrgmembershiphistoryDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPaymentauthorizationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPaymentDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPaymentdisbursementDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPaymentmethodDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iSubcodeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iSubcodegroupDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iSubcodegroupmapDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iSubcoderangemajorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iSubcoderangeminorDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iSuffixDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iTablemappingDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iTaxcreditDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iTokenDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iTweetDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iUserroleDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iUsersDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972285" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iVehicleDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iWaitinglistDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iXxapprovestampDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iXxinvoice2DAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iXxinvoiceDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iXxinvoiceitem2DAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iXxinvoiceitemDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iXxonlineregDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iXxpaymentdispersalDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iXxwebsessionDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iZipcodesDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972285" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPersonDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPersondisciplineDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPrerequisiteDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iProxyDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iQualificationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRegionDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRegistrationDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iReportDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRespiratorFitTestsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972285" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRoleDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRoleoprightDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iSessionsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972285" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iSettingsDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360710972285" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iStatisticDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556343" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/class.email.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360770928788" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventstagingDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventsupportDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventTrashDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FacebookDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FbmtransactionDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FeescheduledefaultDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FeescheduleDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FeeschedulestagingDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FeescheduleTrashDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FeetypeDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FieldcontactDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FieldtripDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FriendlyfieldDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.FundingtypeDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.GradetypeDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.GranttypeDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.HeartbeatDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.InstructorcategoryDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.InstructorDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.InstructorqualificationDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.KeytopicDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.LocationDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.LogDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.LogLevelDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.LxrdemographicDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.LxrdemographictitleDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.LxrscoreDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.LxrscorepreferenceDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.LxrscoretestDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.LxrstudentresponseDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.MailinglistDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.MailinglistsubscriberDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.MeetingDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.MeetingstagingDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.MeetingTrashDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046391" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.Onlineform10attendeeDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.Onlineform10DTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.OnlineregistrationDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.OprightDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.OrganizationdisciplineDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.OrganizationDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.OrganizationmembershipDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.OrgmembershiphistoryDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.PaymentauthorizationDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.PaymentdisbursementDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.PaymentDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.PaymentmethodDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.PersondisciplineDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.PersonDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.PrerequisiteDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ProxyDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.QualificationDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.RegionDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.RegistrationDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ReportDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.RespiratorFitTestDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.RoleDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.RoleoprightDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.SessionDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.SettingDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.StatisticDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.SubcodeDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.SubcodegroupDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.SubcodegroupmapDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.SubcoderangemajorDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.SubcoderangeminorDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.SuffixDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.TablemappingDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.TaxcreditDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.TokenDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.TweetDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.UserDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.UserroleDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.VehicleDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.WaitinglistDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.XxapprovestampDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.Xxinvoice2DTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.XxinvoiceDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.Xxinvoiceitem2DTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.XxinvoiceitemDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.XxonlineregDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.XxpaymentdispersalDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.XxwebsessionDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ZipcodeDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.AccountbudgetDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.AccountmanagerDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.AdditionalexpenseDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.AdditionalprerequisiteDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.AdditionalqualificationDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ApproveDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ApproveTrashDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.AuthenticationTypeDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.AuthlogDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.BaselineDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CertificateDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CertificationAccreditorDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CertificationDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CertificationLevelDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CertificationLevelRequirementDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ChangelogDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ConferenceDownloadDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ConferenceDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ConferenceeventDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ConferencetemplatecourseDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046392" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ConferencetemplateDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CoordcategoryDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CoordinatorDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CountrieDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CountrySubdivisionDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CourseAssignmentDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CoursecategoryDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CourseDownloadDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CourseDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CourseEquipmentDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CourseFeatureDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CourseinstructorDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CourselevelDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CoursepacketDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CoursequalificationDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CourseStandardDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.CredittypeDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.DisciplineDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EmailccDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EmailDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EmailreasonDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EmailtrackingDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EmsinstructorupdateDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventAssignmentDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventinstructorDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventinstructorpaymentDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventinstructorstagingDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventinstructorTrashDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventmileageDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventnoteDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.EventnoteTrashDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360771046393" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.VConferenceeventFeeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.CoordinfoviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferenceexpensetotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.AdditionalexpensetotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.WaitinglistviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PersonssnviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RegistrationfeetotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PersonviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ApproveviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.VOnlineform10DAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferenceviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FeescheduleviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferencetemplateviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.FundingtypeviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.EventsupportviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RegistrationoccupationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.MailinglistviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.ConferenceeventviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.UseroprightviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.Onlineform10processorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OrganizationpersonliteviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.AuthlogviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.RegistrationcountyviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.Onlineform10attendeeviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.MeetingcapviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591902" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.Onlineform10processorviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.InstructorviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.OrganizationpersonliteviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CoordinatorviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RegistrationorganizationviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ConferenceeventviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.QualificationviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventoccupationcountviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.UseroprightviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CoordinatorDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CoursecategoryDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CourseDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventdisciplinecountviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CourseEquipmentDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.Onlineform10attendeeviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CourseinstructorDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CourselevelDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CoordcategoryviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134892" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CoursepacketDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CoursequalificationDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ConferencemeetingcapviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CredittypeDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PersonssnviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.DisciplineDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EmailccDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.Onlineform10viewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EmailDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EmailreasonDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EmailtrackingDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EmsinstructorupdateDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventinstructorDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventinstructorpaymentDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventinstructorstagingDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventinstructorTrashDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PrerequisiteviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventmileageDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.OrganizationviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventnoteDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventnoteTrashDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventstagingDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventsupportDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventTrashDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FacebookDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FbmtransactionDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FeescheduleDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FeescheduledefaultDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FeeschedulestagingDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FeescheduleTrashDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FeetypeDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FieldcontactDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FieldtripDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FriendlyfieldDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FundingtypeDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.GradetypeDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.GranttypeDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.HeartbeatDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.InstructorcategoryDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.InstructorDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.InstructorqualificationDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.KeytopicDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.LocationDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.LogDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.MailinglistDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.MailinglistsubscriberDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.MeetingDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.MeetingstagingDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.MeetingTrashDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.Onlineform10attendeeDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.Onlineform10DAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.OnlineregistrationDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.OprightDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.OrganizationDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ApproveviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.OrganizationdisciplineDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.OrganizationmembershipDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.OrgmembershiphistoryDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PaymentauthorizationDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PaymentDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PaymenttotalviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PaymentdisbursementDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134893" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.UserroleviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PaymentmethodDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CoordcategoryDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PersonDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PersonviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PersondisciplineDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PrerequisiteDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ProxyDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.QualificationDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FeeschedulestagingviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ConferencetemplateDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RegionDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ConferencetemplatecourseDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RegistrationDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ConferenceeventDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ReportDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RoleDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RoleoprightDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ConferenceDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ChangelogDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.StatisticDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.SubcodeDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.SubcodegroupDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.SubcodegroupmapDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CertificateDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.SubcoderangemajorDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.BaselineDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.SubcoderangeminorDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.AuthlogDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.SuffixDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.TablemappingDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ApproveTrashDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.TaxcreditDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ApproveDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.TokenDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.AdditionalqualificationDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.TweetDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.AdditionalprerequisiteDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.UserroleDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.AdditionalexpenseDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.AccountmanagerDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.VehicleDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.AccountbudgetDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.WaitinglistDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.XxapprovestampDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.Xxinvoice2DAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.XxinvoiceDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.Xxinvoiceitem2DAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.XxinvoiceitemDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ConferenceexpensetotalviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.XxonlineregDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RegistrationcountviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.XxpaymentdispersalDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.XxwebsessionDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CoordinfoviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.AdditionalexpensetotalviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.AuthlogviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FeescheduledefaultviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.WaitinglistviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FundingtypeviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventsupportviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventinstructortotalviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RoleoprightviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134894" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FbmtransactionviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.OrganizationmembershipviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.InstructorqualificationviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RegistrationcountyviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ExpensetotalviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.OrgmembershiphistoryviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventorganizationcountviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.VPersonMatchDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.VOnlineform10DAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RegistrationviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.VConferenceeventFeeDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventmileageviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ConferenceeventfeeviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ConferencetemplateviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.MeetingviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.VehicleviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CoursequalificationviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.MailinglistviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.FeescheduleviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PersonliteviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventleadinstructorviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.MailinglistsubscriberviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.MeetingcapviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventaddlinstructorviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.CertificationprerequisiteviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.PaymenteventtotalviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RegistrationfeetotalviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.ConferenceviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.VPeopleLiteDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.EventinstructorviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/ext/class.RegistrationoccupationviewDAOExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360777134895" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPersonviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOnlineform10processorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventorganizationcountviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRoleoprightviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRegistrationoccupationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRegistrationorganizationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iInstructorqualificationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iAuthlogviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventmileageviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPersonssnviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iMailinglistviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iExpensetotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferenceeventfeeviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iUserroleviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPaymenteventtotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iVConferenceeventFeeDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iQualificationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferenceexpensetotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferenceviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferencetemplateviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iAdditionalexpensetotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFeescheduleviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRegistrationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iMeetingviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOrgmembershiphistoryviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iInstructorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRegistrationcountviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOrganizationmembershipviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRegistrationfeetotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCoordinatorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOrganizationpersonliteviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferenceeventviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCoursequalificationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iVPeopleLiteDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventdisciplinecountviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556344" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOnlineform10viewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCoordinfoviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOnlineform10attendeeviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iRegistrationcountyviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPrerequisiteviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iConferencemeetingcapviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventoccupationcountviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFeescheduledefaultviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPaymenttotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCertificationprerequisiteviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iUseroprightviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iMeetingcapviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iVPersonMatchDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFundingtypeviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventsupportviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFeeschedulestagingviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iMailinglistsubscriberviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventinstructorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iPersonliteviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iVehicleviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iCoordcategoryviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iVOnlineform10DAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventinstructortotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iApproveviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iWaitinglistviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventleadinstructorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iEventaddlinstructorviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iFbmtransactionviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/interfaces/dao/interface.iOrganizationviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360778556345" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +824,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lib.Generator.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/libraries/lib.Generator.php">
+      <file leaf-file-name="class.Generator.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="59" selection-start="762" selection-end="762" vertical-scroll-proportion="0.46363637">
+            <state line="197" column="53" selection-start="7901" selection-end="7901" vertical-scroll-proportion="0.72275335">
               <folding />
             </state>
           </provider>
@@ -87,6 +844,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/libraries/lib.Generator.php" />
+        <option value="$PROJECT_DIR$/lib/org/cakephp/lib/Cake/Utility/Inflector.php" />
+        <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/generate.php" />
+        <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php" />
       </list>
     </option>
   </component>
@@ -96,6 +856,25 @@
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpellCheckingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -174,6 +953,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cakephp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Utility" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHPDAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -183,10 +996,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="phpdao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,48 +1060,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHPDAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beardon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phpdao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,11 +1070,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PHPDAO\project\lib\com\beardon\phpdao\classes" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -404,17 +1184,17 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33035713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.21875" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.44308037" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -480,13 +1260,140 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/libraries/lib.Generator.php">
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="59" selection-start="762" selection-end="762" vertical-scroll-proportion="0.46363637">
+        <state line="17" column="27" selection-start="377" selection-end="377" vertical-scroll-proportion="0.52737224">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="28" selection-start="108" selection-end="108" vertical-scroll-proportion="-0.062043797">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionProperty.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.QueryExecutor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="30" selection-start="362" selection-end="362" vertical-scroll-proportion="-13.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/org/cakephp/lib/Cake/Utility/Inflector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="552" column="19" selection-start="17531" selection-end="17531" vertical-scroll-proportion="-351.1154">
+          <folding>
+            <element signature="e#7#578#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/generate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="43" selection-start="53" selection-end="53" vertical-scroll-proportion="-1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="53" selection-start="7901" selection-end="7901" vertical-scroll-proportion="0.72275335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>archive-tar-minitar (v0.5.2, ruby-1.9.3-p194) [gem]</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>4.5.0.20967 (player 10.2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>project</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>4.5.0.20967 (player 10.2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

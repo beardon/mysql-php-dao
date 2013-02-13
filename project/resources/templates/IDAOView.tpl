@@ -14,14 +14,6 @@
 interface ${class_name} {
 
 	/**
-	 * Get DTO object by primry key
-	 *
-	 * @param string $id primary key
-	 * @return ${type_name} 
-	 */
-	public function load($id);
-
-	/**
 	 * Get all records from table
 	 */
 	public function queryAll();
@@ -35,4 +27,3 @@ interface ${class_name} {
 	
 ${queryByFieldFunctions}
 }
-?>

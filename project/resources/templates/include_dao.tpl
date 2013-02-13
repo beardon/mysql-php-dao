@@ -9,4 +9,3 @@
 	require_once('classes/core/class.ArrayList.php');
 	require_once('classes/dao/class.DAOFactory.php');
  	${include}
-?>

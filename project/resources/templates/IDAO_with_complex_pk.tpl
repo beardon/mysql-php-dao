@@ -62,4 +62,3 @@ interface ${class_name} {
 ${queryByFieldFunctions}
 ${deleteByFieldFunctions}
 }
-?>

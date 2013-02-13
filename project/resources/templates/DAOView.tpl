@@ -15,19 +15,6 @@
 class ${class_name} implements ${interface_name} {
 
 	/**
-	 * Get Domain object by primry key
-	 *
-	 * @param string $id primary key
-	 * @return ${dto_name} 
-	 */
-	public function load($id){
-		$sql = 'SELECT * FROM ${table_name} WHERE ${pk} = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set${pk_number}($id);
-		return $this->getRow($sqlQuery);
-	}
-
-	/**
 	 * Get all records from table
 	 *
 	 * @return ${dto_name}[]
@@ -101,4 +88,3 @@ ${queryByFieldFunctions}
 		return QueryExecutor::queryForString($sqlQuery);
 	}
 }
-?>

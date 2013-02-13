@@ -11,4 +11,3 @@
 class ${class_name} extends ${ancestor_class_name} {
 
 }
-?>

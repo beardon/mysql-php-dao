@@ -1,6 +1,9 @@
 <?php
 
 define('LOCAL_PATH', __DIR__ . '/');
+
+require_once(LOCAL_PATH . '../../../../org/cakephp/lib/Cake/Utility/Inflector.php');
+
 define('SOURCE_CLASSES_PATH', LOCAL_PATH . '../classes/');
 define('SOURCE_CLASSES_CORE_PATH', SOURCE_CLASSES_PATH . 'dao/core/');
 define('SOURCE_CLASSES_SQL_PATH', SOURCE_CLASSES_PATH . 'dao/sql/');
@@ -27,15 +30,18 @@ define('SQL_PATH', CLASSES_PATH . 'sql/');
 
 class Generator
 {
-    static private function createDeleteByFunction($tableName, $fieldName, $columnType)
+    static private function createDeleteByFunction($tableName, $fieldName, $memberName, $columnType)
     {
-        $fieldMemberName = self::getClassName($fieldName);
         $parameterSetter = 'set';
         if (self::isColumnTypeNumber($columnType))
         {
             $parameterSetter .= "Number";
         }
-        $code = "\t" . "public function deleteBy" . $fieldMemberName . "(\$value) {" . "\n";
+        $code = "\t" . "/**" . "\n";
+        $code .= "\t" . " * @param string \$value" . "\n";
+        $code .= "\t" . " * @return int number of affected rows" . "\n";
+        $code .= "\t" . " */" . "\n";
+        $code .= "\t" . "public function deleteBy" . $memberName . "(\$value) {" . "\n";
         $code .= "\t\t" . "\$sql = 'DELETE FROM " . $tableName . " WHERE " . $fieldName . " = ?';" . "\n";
         $code .= "\t\t" . "\$sqlQuery = new SqlQuery(\$sql);" . "\n";
         $code .= "\t\t" . "\$sqlQuery->" . $parameterSetter . "(\$value);" . "\n";
@@ -44,15 +50,18 @@ class Generator
         return $code;
     }
 
-    static private function createQueryByFunction($tableName, $fieldName, $columnType)
+    static private function createQueryByFunction($tableName, $fieldName, $memberName, $columnType, $returnType)
     {
-        $fieldMemberName = self::getClassName($fieldName);
         $parameterSetter = 'set';
         if (self::isColumnTypeNumber($columnType))
         {
             $parameterSetter .= "Number";
         }
-        $code = "\t" . "public function queryBy" . $fieldMemberName . "(\$value) {" . "\n";
+        $code = "\t" . "/**" . "\n";
+        $code .= "\t" . " * @param string \$value" . "\n";
+        $code .= "\t" . " * @return " . $returnType . "[]" . "\n";
+        $code .= "\t" . " */" . "\n";
+        $code .= "\t" . "public function queryBy" . $memberName . "(\$value) {" . "\n";
         $code .= "\t\t" . "\$sql = 'SELECT * FROM " . $tableName . " WHERE " . $fieldName . " = ?';" . "\n";
         $code .= "\t\t" . "\$sqlQuery = new SqlQuery(\$sql);" . "\n";
         $code .= "\t\t" . "\$sqlQuery->" . $parameterSetter . "(\$value);" . "\n";
@@ -100,14 +109,13 @@ class Generator
         for ($i = 0; $i < count($tables); $i++)
         {
             $tableName = $tables[$i][0];
-            $tableClassBase = self::getClassName($tableName);
+            $tableClassBase = Inflector::classify($tableName);
             $tableDAOName = $tableClassBase . 'DAO';
             $tableDAOExtName = $tableDAOName . 'Ext';
             $template = new Template(SOURCE_TEMPLATES_PATH . 'DAOExt.tpl');
             $template->setPair('class_name', $tableDAOExtName);
             $template->setPair('ancestor_class_name', $tableDAOName);
             $template->setPair('table_name', $tableName);
-            $template->setPair('var_name', self::getVarName($tableName));
             $template->setPair('date', date("Y-m-d H:i"));
             $file = OUTPUT_PATH . DAO_EXT_PATH . 'class.' . $tableDAOExtName . '.php';
             if (!file_exists($file))
@@ -123,7 +131,7 @@ class Generator
         for ($i = 0; $i < count($tables); $i++)
         {
             $tableName = $tables[$i][0];
-            $tableClassBase = self::getClassName($tableName);
+            $tableClassBase = Inflector::classify($tableName);
             $tableDAOName = $tableClassBase . 'DAO';
             $tableDAOExtName = $tableDAOName . 'Ext';
             $str .= "\t/**\n";
@@ -147,7 +155,7 @@ class Generator
         for ($i = 0; $i < count($tables); $i++)
         {
             $tableName = $tables[$i][0];
-            $tableClassBase = self::getClassName($tableName);
+            $tableClassBase = Inflector::classify($tableName);
             $tableDAOName = $tableClassBase . 'DAO';
             $tableDAOInterfaceName = 'i' . $tableDAOName;
             $tableDTOName = $tableClassBase . 'DTO';
@@ -165,30 +173,40 @@ class Generator
             $queryByFunction = '';
             $deleteByFunction = '';
             $pk_type = '';
+            $memberNames = array();
+            $k = 1;
             for ($j = 0; $j < count($fieldArray); $j++)
             {
+                $fieldName = $fieldArray[$j][0];
+                $memberName = Inflector::variable($fieldName);
+                $columnType = $fieldArray[$j][1];
+                if (in_array(strtolower($memberName), $memberNames)) {
+                    $k++;
+                    $memberName .= $k;
+                }
+                $memberNames[$j] = strtolower($memberName);
                 if ($fieldArray[$j][3] == 'PRI')
                 {
-                    $pk = $fieldArray[$j][0];
+                    $pk = $fieldName;
                     $c = count($pks);
-                    $pks[$c] = $fieldArray[$j][0];
-                    $pk_type = $fieldArray[$j][1];
+                    $pks[$c] = $fieldName;
+                    $pk_type = $columnType;
                 } else
                 {
-                    $insertFields .= $fieldArray[$j][0] . ", ";
-                    $updateFields .= $fieldArray[$j][0] . " = ?, ";
+                    $insertFields .= $fieldName . ", ";
+                    $updateFields .= $fieldName . " = ?, ";
                     $questionMarks .= "?, ";
-                    if (self::isColumnTypeNumber($fieldArray[$j][1]))
+                    if (self::isColumnTypeNumber($columnType))
                     {
-                        $parameterSetter .= "\t\t\$sqlQuery->setNumber($" . $tableDTOVariableName . "->" . self::getVarNameWithS($fieldArray[$j][0]) . ");\n";
+                        $parameterSetter .= "\t\t\$sqlQuery->setNumber($" . $tableDTOVariableName . "->" . $memberName . ");\n";
                     } else
                     {
-                        $parameterSetter .= "\t\t\$sqlQuery->set($" . $tableDTOVariableName . "->" . self::getVarNameWithS($fieldArray[$j][0]) . ");\n";
+                        $parameterSetter .= "\t\t\$sqlQuery->set($" . $tableDTOVariableName . "->" . $memberName . ");\n";
                     }
-                    $queryByFunction .= self::createQueryByFunction($tableName, $fieldArray[$j][0], $fieldArray[$j][1]);
-                    $deleteByFunction .= self::createDeleteByFunction($tableName, $fieldArray[$j][0], $fieldArray[$j][1]);
+                    $queryByFunction .= self::createQueryByFunction($tableName, $fieldName, ucfirst($memberName), $columnType, $tableDTOExtName);
+                    $deleteByFunction .= self::createDeleteByFunction($tableName, $fieldName, ucfirst($memberName), $columnType);
                 }
-                $readRow .= "\t\t\$" . $tableDTOVariableName . "->" . self::getVarNameWithS($fieldArray[$j][0]) . " = \$row['" . $fieldArray[$j][0] . "'];\n";
+                $readRow .= "\t\t\$" . $tableDTOVariableName . "->" . $memberName . " = \$row['" . $fieldName . "'];\n";
             }
             if ($hasPK)
             {
@@ -236,13 +254,14 @@ class Generator
                     $s2 .= ' AND ';
                     $s3 .= "\t\t";
                 }
+                $memberName = Inflector::variable($pks[$z]);
                 $insertFields2 .= ', ' . $pks[$z];
-                $s .= '$' . self::getVarNameWithS($pks[$z]);
+                $s .= '$' . $memberName;
                 $s2 .= $pks[$z] . ' = ? ';
-                $s3 .= '$sqlQuery->setNumber($' . self::getVarNameWithS($pks[$z]) . ');';
+                $s3 .= '$sqlQuery->setNumber($' . $memberName . ');';
                 $s3 .= "\n";
                 $s4 .= "\n\t\t";
-                $s4 .= '$sqlQuery->setNumber($' . self::getVarName($tableName) . '->' . self::getVarNameWithS($pks[$z]) . ');';
+                $s4 .= '$sqlQuery->setNumber($' . $tableDTOVariableName . '->' . $memberName . ');';
                 $s4 .= "\n";
             }
             if ($s[0] == ',') $s = substr($s, 1);
@@ -254,7 +273,7 @@ class Generator
             $template->setPair('pk_set', $s3);
             $template->setPair('pk_where', $s2);
             $template->setPair('pks', $s);
-            $template->setPair('pk_php', self::getVarNameWithS($pk));
+            $template->setPair('pk_php', Inflector::variable($pk));
             $template->setPair('insert_fields', $insertFields);
             $template->setPair('read_row', $readRow);
             $template->setPair('update_fields', $updateFields);
@@ -276,7 +295,7 @@ class Generator
         for ($i = 0; $i < count($tables); $i++)
         {
             $tableName = $tables[$i][0];
-            $tableClassBase = self::getClassName($tableName);
+            $tableClassBase = Inflector::classify($tableName);
             if ($tableClassBase[strlen($tableClassBase) - 1] == 's')
             {
                 $tableClassBase = substr($tableClassBase, 0, strlen($tableClassBase) - 1);
@@ -304,7 +323,7 @@ class Generator
         for ($i = 0; $i < count($tables); $i++)
         {
             $tableName = $tables[$i][0];
-            $tableClassBase = self::getClassName($tableName);
+            $tableClassBase = Inflector::classify($tableName);
             if ($tableClassBase[strlen($tableClassBase) - 1] == 's')
             {
                 $tableClassBase = substr($tableClassBase, 0, strlen($tableClassBase) - 1);
@@ -317,7 +336,7 @@ class Generator
             $fields = "\r\n";
             for ($j = 0; $j < count($fieldArray); $j++)
             {
-                $fields .= "\t\tvar $" . self::getVarNameWithS($fieldArray[$j][0]) . ";\n\r";
+                $fields .= "\t\tvar $" . Inflector::variable($fieldArray[$j][0]) . ";\n\r";
             }
             $template->setPair('variables', $fields);
             $template->setPair('date', date("Y-m-d H:i"));
@@ -330,7 +349,7 @@ class Generator
         for ($i = 0; $i < count($tables); $i++)
         {
             $tableName = $tables[$i][0];
-            $tableClassBase = self::getClassName($tableName);
+            $tableClassBase = Inflector::classify($tableName);
             $tableDAOName = $tableClassBase . 'DAO';
             $tableIDAOName = 'i' . $tableDAOName;
             $tableDTOName = $tableClassBase . 'DTO';
@@ -347,30 +366,42 @@ class Generator
             $pks = array();
             $queryByField = '';
             $deleteByField = '';
+            $memberNames = array();
+            $k = 1;
             for ($j = 0; $j < count($fieldArray); $j++)
             {
+                $fieldName = $fieldArray[$j][0];
+                $memberName = Inflector::variable($fieldName);
+                $columnType = $fieldArray[$j][1];
+                if (in_array(strtolower($memberName), $memberNames)) {
+                    $k++;
+                    $memberName .= $k;
+                }
+                $memberNames[$j] = strtolower($memberName);
                 if ($fieldArray[$j][3] == 'PRI')
                 {
-                    $pk = $fieldArray[$j][0];
+                    $pk = $fieldName;
                     $c = count($pks);
-                    $pks[$c] = $fieldArray[$j][0];
+                    $pks[$c] = $fieldName;
                 } else
                 {
-                    $insertFields .= $fieldArray[$j][0] . ", ";
-                    $updateFields .= $fieldArray[$j][0] . " = ?, ";
+                    $insertFields .= $fieldName . ", ";
+                    $updateFields .= $fieldName . " = ?, ";
                     $questionMarks .= "?, ";
-                    if (self::isColumnTypeNumber($fieldArray[$j][1]))
+                    if (self::isColumnTypeNumber($columnType))
                     {
-                        $parameterSetter .= "\t\t\$sqlQuery->setNumber($" . self::getVarName($tableName) . "->" . self::getVarNameWithS($fieldArray[$j][0]) . ");\n";
+                        $parameterSetter .= "\t\t" . "\$sqlQuery->setNumber($" . $tableDTOVariableName . "->" . $memberName . ");\n";
                     } else
                     {
-                        $parameterSetter .= "\t\t" . '$sqlQuery->set($' . self::getVarName($fieldArray[$j][0]) . ');' . "\n";
+                        $parameterSetter .= "\t\t" . "\$sqlQuery->set($" . $memberName . ');' . "\n";
                     }
-                    $queryByField .= "\tpublic function queryBy" . self::getClassName($fieldArray[$j][0]) . "(\$value);\n\n";
-                    $deleteByField .= "\tpublic function deleteBy" . self::getClassName($fieldArray[$j][0]) . "(\$value);\n\n";
+                    $queryByField .= "\tpublic function queryBy" . ucfirst($memberName) . "(\$value);\n\n";
+                    $deleteByField .= "\tpublic function deleteBy" . ucfirst($memberName) . "(\$value);\n\n";
                 }
-                $readRow .= "\t\t\$" . self::getVarName($tableName) . "->" . self::getVarNameWithS($fieldArray[$j][0]) . " = \$row['" . $fieldArray[$j][0] . "'];\n";
+                $readRow .= "\t\t\$" . $tableDTOVariableName . "->" . $memberName . " = \$row['" . $fieldName . "'];\n";
             }
+            if ($tableName == 'v_users'){
+            echo(var_export($memberNames, true));}
 
             if ($hasPK)
             {
@@ -406,13 +437,14 @@ class Generator
                     $s2 .= ' AND ';
                     $s3 .= "\t\t";
                 }
-                $insertFields2 .= ', ' . self::getVarNameWithS($pks[$z]);
-                $s .= '$' . self::getVarNameWithS($pks[$z]);
-                $s2 .= self::getVarNameWithS($pks[$z]) . ' = ? ';
-                $s3 .= '$sqlQuery->setNumber(' . self::getVarName($pks[$z]) . ');';
+                $memberName = Inflector::variable($pks[$z]);
+                $insertFields2 .= ', ' . $memberName;
+                $s .= '$' . $memberName;
+                $s2 .= $memberName . ' = ? ';
+                $s3 .= '$sqlQuery->setNumber(' . $memberName . ');';
                 $s3 .= "\n";
                 $s4 .= "\n\t\t";
-                $s4 .= '$sqlQuery->setNumber($' . self::getVarName($tableName) . '->' . self::getVarNameWithS($pks[$z]) . ');';
+                $s4 .= '$sqlQuery->setNumber($' . $tableDTOVariableName . '->' . $memberName . ');';
                 $s4 .= "\n";
             }
             $template->setPair('question_marks2', $questionMarks2);
@@ -448,7 +480,7 @@ class Generator
         for ($i = 0; $i < count($tables); $i++)
         {
             $tableName = $tables[$i][0];
-            $tableClassBase = self::getClassName($tableName);
+            $tableClassBase = Inflector::classify($tableName);
             $tableDAOName = $tableClassBase . 'DAO';
             $tableDAOExtName = $tableDAOName . 'Ext';
             $tableIDAOName = 'i' . $tableDAOName;
@@ -465,29 +497,6 @@ class Generator
         $template->write(OUTPUT_PATH . 'include_dao.php');
     }
 
-    static private function getClassName($tableName)
-    {
-        $tableName = strtoupper($tableName[0]) . substr($tableName, 1);
-        for ($i = 0; $i < strlen($tableName); $i++)
-        {
-            if ($tableName[$i] == '_')
-            {
-                $tableName = substr($tableName, 0, $i) . strtoupper($tableName[$i + 1]) . substr($tableName, $i + 2);
-            }
-        }
-        return $tableName;
-    }
-
-    static private function getDTOName($tableName)
-    {
-        $name = self::getClassName($tableName);
-        if ($name[strlen($name) - 1] == 's')
-        {
-            $name = substr($name, 0, strlen($name) - 1);
-        }
-        return $name;
-    }
-
     /**
      * @param string $table
      * @return array
@@ -497,36 +506,6 @@ class Generator
         $sql = 'DESC ' . $table;
         error_log($sql);
         return QueryExecutor::execute(new SqlQuery($sql));
-    }
-
-    static private function getVarName($tableName)
-    {
-        $tableName = strtolower($tableName[0]) . substr($tableName, 1);
-        for ($i = 0; $i < strlen($tableName); $i++)
-        {
-            if ($tableName[$i] == '_')
-            {
-                $tableName = substr($tableName, 0, $i) . strtoupper($tableName[$i + 1]) . substr($tableName, $i + 2);
-            }
-        }
-        if ($tableName[strlen($tableName) - 1] == 's')
-        {
-            $tableName = substr($tableName, 0, strlen($tableName) - 1);
-        }
-        return $tableName;
-    }
-
-    static private function getVarNameWithS($tableName)
-    {
-        $tableName = strtolower($tableName[0]) . substr($tableName, 1);
-        for ($i = 0; $i < strlen($tableName); $i++)
-        {
-            if ($tableName[$i] == '_')
-            {
-                $tableName = substr($tableName, 0, $i) . strtoupper($tableName[$i + 1]) . substr($tableName, $i + 2);
-            }
-        }
-        return $tableName;
     }
 
     static private function initialize()
