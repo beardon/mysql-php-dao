@@ -30,6 +30,30 @@ define('SQL_PATH', CLASSES_PATH . 'sql/');
 
 class Generator
 {
+    static private function convertMySQLTypeToPHPType($inType)
+    {
+        $outType = '';
+        switch ($inType)
+        {
+            case 'int':
+                $outType = 'int';
+                break;
+            case 'float':
+                $outType = 'float';
+                break;
+            case 'tinyint':
+                $outType = 'bool';
+                break;
+            case 'date':
+            case 'datetime':
+            case 'text':
+            case 'varchar':
+                $outType = 'string';
+                break;
+        }
+        return $outType;
+    }
+
     static private function createDeleteByFunction($tableName, $fieldName, $memberName, $columnType)
     {
         $parameterSetter = 'set';
@@ -48,6 +72,30 @@ class Generator
         $code .= "\t\t" . "return \$this->executeUpdate(\$sqlQuery);" . "\n";
         $code .= "\t" . "}" . "\n\n";
         return $code;
+    }
+
+    static private function createDocBlock($shortDesc, $longDesc, $paramTags, $returnTag)
+    {
+        $block = "\t" . "/**" . "\n";
+        $block .= "\t" . " * " . $shortDesc . "\n";
+        $longDesc = trim($longDesc);
+        if (!empty($longDesc))
+        {
+            $block .= "\t" . " * " . "\n";
+            $block .= "\t" . " * " . $longDesc . "\n";
+        }
+        $block .= "\t" . " * " . "\n";
+        for ($i = 0; $i < count($paramTags); $i++)
+        {
+            $block .= "\t" . " * @param " . $paramTags[$i] . "\n";
+        }
+        if (!empty($returnTag))
+        {
+            $block .= "\t" . " * " . "\n";
+            $block .= "\t" . " * @return " . $returnTag . "\n";
+        }
+        $block .= "\t" . " */" . "\n";
+        return $block;
     }
 
     static private function createQueryByFunction($tableName, $fieldName, $memberName, $columnType, $returnType)
@@ -70,16 +118,108 @@ class Generator
         return $code;
     }
 
+    static private function createStoredFunction($function)
+    {
+        $functionMySQLName = $function['Name'];
+        $functionPHPName = Inflector::variable($functionMySQLName);
+        $comment = $function['Comment'];
+        $params = self::getRoutineParameters($functionMySQLName);
+        $asFunctionParamArray = array();
+        $asQueryParamArray = array();
+        $paramTags = array();
+        $returnTag = '';
+        $j = 0;
+        for ($i = 0; $i < count($params); $i++)
+        {
+            if (!empty($params[$i]['Mode']))
+            {
+                $asFunctionParamArray[$j] = '$' . $params[$i]['Name'];
+                $asQueryParamArray[$j] = '?';
+                $paramTags[$j] = $params[$i]['PHPType'] . ' $' . $params[$i]['Name'];
+                $j++;
+            } else
+            {
+                $returnTag = $params[$i]['PHPType'];
+            }
+        }
+        $functionParams = implode(', ', $asFunctionParamArray);
+        $queryParams = implode(', ', $asQueryParamArray);
+        $routine = self::createDocBlock($functionPHPName, $comment, $paramTags, $returnTag);
+        $routine .= "\t" . "static public function " . $functionPHPName . "(" . $functionParams . ")" . "\n";
+        $routine .= "\t" . "{" . "\n";
+        $routine .= "\t\t" . "\$sql = 'SELECT " . $functionMySQLName . "(" . $queryParams . ") AS value';" . "\n";
+        $routine .= "\t\t" . "\$sqlQuery = new SqlQuery(\$sql);" . "\n";
+        for ($i = 0; $i < count($params); $i++)
+        {
+            if (!empty($params[$i]['Mode']))
+            {
+                $parameterSetter = 'set';
+                if (self::isColumnTypeNumber($params[$i]['PHPType']))
+                {
+                    $parameterSetter .= "Number";
+                }
+                $routine .= "\t\t" . "\$sqlQuery->" . $parameterSetter . "(\$" . $params[$i]['Name'] . ");" . "\n";
+            }
+        }
+        $routine .= "\t\t" . "return QueryExecutor::queryForString(\$sqlQuery, 'value');" . "\n";
+        $routine .= "\t" . "}" . "\n\n";
+        return $routine;
+    }
+
+    static private function createStoredProcedure($procedure)
+    {
+        $procedureMySQLName = $procedure['Name'];
+        $procedurePHPName = Inflector::variable($procedureMySQLName);
+        $comment = $procedure['Comment'];
+        $params = self::getRoutineParameters($procedureMySQLName);
+        $asFunctionParamArray = array();
+        $asQueryParamArray = array();
+        $paramTags = array();
+        $j = 0;
+        for ($i = 0; $i < count($params); $i++)
+        {
+            if (!empty($params[$i]['Mode']))
+            {
+                $asFunctionParamArray[$j] = '$' . $params[$i]['Name'];
+                $asQueryParamArray[$j] = '?';
+                $paramTags[$j] = $params[$i]['PHPType'] . ' $' . $params[$i]['Name'];
+                $j++;
+            }
+        }
+        $functionParams = implode(', ', $asFunctionParamArray);
+        $queryParams = implode(', ', $asQueryParamArray);
+        $routine = self::createDocBlock($procedurePHPName, $comment, $paramTags, '');
+        $routine .= "\t" . "static public function " . $procedurePHPName . "(" . $functionParams . ")" . "\n";
+        $routine .= "\t" . "{" . "\n";
+        $routine .= "\t\t" . "\$sql = 'CALL " . $procedureMySQLName . "(" . $queryParams . ")';" . "\n";
+        $routine .= "\t\t" . "\$sqlQuery = new SqlQuery(\$sql);" . "\n";
+        for ($i = 0; $i < count($params); $i++)
+        {
+            if (!empty($params[$i]['Mode']))
+            {
+                $parameterSetter = 'set';
+                if (self::isColumnTypeNumber($params[$i]['PHPType']))
+                {
+                    $parameterSetter .= "Number";
+                }
+                $routine .= "\t\t" . "\$sqlQuery->" . $parameterSetter . "(\$" . $params[$i]['Name'] . ");" . "\n";
+            }
+        }
+        $routine .= "\t\t" . "QueryExecutor::execute(\$sqlQuery);" . "\n";
+        $routine .= "\t" . "}" . "\n\n";
+        return $routine;
+    }
+
     /**
      * @param string $tableName
      * @return bool
      */
     static private function doesTableContainPK($tableName)
     {
-        $fieldArray = self::getFields($tableName);
-        for ($j = 0; $j < count($fieldArray); $j++)
+        $fields = self::getFields($tableName);
+        for ($j = 0; $j < count($fields); $j++)
         {
-            if ($fieldArray[$j][3] == 'PRI')
+            if ($fields[$j]['Key'] == 'PRI')
             {
                 return true;
             }
@@ -91,14 +231,15 @@ class Generator
     {
         self::initialize();
         $sql = 'SHOW TABLES';
-        $tablesArray = QueryExecutor::execute(new SqlQuery($sql));
-        self::generateDTOObjects($tablesArray);
-        self::generateDTOExtObjects($tablesArray);
-        self::generateDAOObjects($tablesArray);
-        self::generateDAOExtObjects($tablesArray);
-        self::generateIDAOObjects($tablesArray);
-        self::generateDAOFactory($tablesArray);
-        self::generateIncludeFile($tablesArray);
+        $tables = QueryExecutor::execute(new SqlQuery($sql));
+        self::generateDTOObjects($tables);
+        self::generateDTOExtObjects($tables);
+        self::generateDAOObjects($tables);
+        self::generateDAOExtObjects($tables);
+        self::generateIDAOObjects($tables);
+        self::generateDAOFactory($tables);
+        self::generateIncludeFile($tables);
+        self::generateStoredRoutines();
     }
 
     /**
@@ -162,7 +303,7 @@ class Generator
             $tableDTOExtName = $tableDTOName . 'Ext';
             $tableDTOVariableName = 'a' . $tableDTOName;
             $hasPK = self::doesTableContainPK($tableName);
-            $fieldArray = self::getFields($tableName);
+            $fields = self::getFields($tableName);
             $parameterSetter = "\n";
             $insertFields = "";
             $updateFields = "";
@@ -175,17 +316,18 @@ class Generator
             $pk_type = '';
             $memberNames = array();
             $k = 1;
-            for ($j = 0; $j < count($fieldArray); $j++)
+            for ($j = 0; $j < count($fields); $j++)
             {
-                $fieldName = $fieldArray[$j][0];
+                $fieldName = $fields[$j]['Field'];
                 $memberName = Inflector::variable($fieldName);
-                $columnType = $fieldArray[$j][1];
-                if (in_array(strtolower($memberName), $memberNames)) {
+                $columnType = $fields[$j]['Type'];
+                if (in_array(strtolower($memberName), $memberNames))
+                {
                     $k++;
                     $memberName .= $k;
                 }
                 $memberNames[$j] = strtolower($memberName);
-                if ($fieldArray[$j][3] == 'PRI')
+                if ($fields[$j]['Key'] == 'PRI')
                 {
                     $pk = $fieldName;
                     $c = count($pks);
@@ -213,7 +355,6 @@ class Generator
                 if (count($pks) == 1)
                 {
                     $template = new Template(SOURCE_TEMPLATES_PATH . 'DAO.tpl');
-                    echo '$pk_type ' . $pk_type . '<br/>';
                     if (self::isColumnTypeNumber($pk_type))
                     {
                         $template->setPair('pk_number', 'Number');
@@ -332,13 +473,13 @@ class Generator
             $template = new Template(SOURCE_TEMPLATES_PATH . 'DTO.tpl');
             $template->setPair('class_name', $tableDTOName);
             $template->setPair('table_name', $tableName);
-            $fieldArray = self::getFields($tableName);
-            $fields = "\r\n";
-            for ($j = 0; $j < count($fieldArray); $j++)
+            $fields = self::getFields($tableName);
+            $members = "\r\n";
+            for ($j = 0; $j < count($fields); $j++)
             {
-                $fields .= "\t\tvar $" . Inflector::variable($fieldArray[$j][0]) . ";\n\r";
+                $members .= "\t\tvar $" . Inflector::variable($fields[$j]['Field']) . ";\n\r";
             }
-            $template->setPair('variables', $fields);
+            $template->setPair('variables', $members);
             $template->setPair('date', date("Y-m-d H:i"));
             $template->write(OUTPUT_PATH . DTO_PATH . 'class.' . $tableDTOName . '.php');
         }
@@ -356,7 +497,7 @@ class Generator
             $tableDTOExtName = $tableDTOName . 'Ext';
             $tableDTOVariableName = 'a' . $tableDTOExtName;
             $hasPK = self::doesTableContainPK($tableName);
-            $fieldArray = self::getFields($tableName);
+            $fields = self::getFields($tableName);
             $parameterSetter = "\n";
             $insertFields = "";
             $updateFields = "";
@@ -368,17 +509,18 @@ class Generator
             $deleteByField = '';
             $memberNames = array();
             $k = 1;
-            for ($j = 0; $j < count($fieldArray); $j++)
+            for ($j = 0; $j < count($fields); $j++)
             {
-                $fieldName = $fieldArray[$j][0];
+                $fieldName = $fields[$j]['Field'];
                 $memberName = Inflector::variable($fieldName);
-                $columnType = $fieldArray[$j][1];
-                if (in_array(strtolower($memberName), $memberNames)) {
+                $columnType = $fields[$j]['Type'];
+                if (in_array(strtolower($memberName), $memberNames))
+                {
                     $k++;
                     $memberName .= $k;
                 }
                 $memberNames[$j] = strtolower($memberName);
-                if ($fieldArray[$j][3] == 'PRI')
+                if ($fields[$j]['Key'] == 'PRI')
                 {
                     $pk = $fieldName;
                     $c = count($pks);
@@ -400,8 +542,6 @@ class Generator
                 }
                 $readRow .= "\t\t\$" . $tableDTOVariableName . "->" . $memberName . " = \$row['" . $fieldName . "'];\n";
             }
-            if ($tableName == 'v_users'){
-            echo(var_export($memberNames, true));}
 
             if ($hasPK)
             {
@@ -492,9 +632,30 @@ class Generator
             $str .= "\trequire_once('" . DTO_PATH . "class." . $tableDTOName . ".php');\n";
             $str .= "\trequire_once('" . DTO_EXT_PATH . "class." . $tableDTOExtName . ".php');\n";
         }
-        $template = new Template(SOURCE_TEMPLATES_PATH . 'include_dao.tpl');
+        $template = new Template(SOURCE_TEMPLATES_PATH . 'IncludeDAO.tpl');
         $template->setPair('include', $str);
-        $template->write(OUTPUT_PATH . 'include_dao.php');
+        $template->write(OUTPUT_PATH . 'IncludeDAO.php');
+    }
+
+    static private function generateStoredRoutines()
+    {
+        $str = '';
+        $sql = 'SHOW FUNCTION STATUS WHERE Db = "' . ConnectionProperty::getDatabase() . '"';
+        $functions = QueryExecutor::execute(new SqlQuery($sql));
+        for ($i = 0; $i < count($functions); $i++)
+        {
+            $str .= self::createStoredFunction($functions[$i]);
+        }
+        $sql = 'SHOW PROCEDURE STATUS WHERE Db = "' . ConnectionProperty::getDatabase() . '"';
+        $procedures = QueryExecutor::execute(new SqlQuery($sql));
+        for ($i = 0; $i < count($procedures); $i++)
+        {
+            $str .= self::createStoredProcedure($procedures[$i]);
+        }
+        $template = new Template(SOURCE_TEMPLATES_PATH . 'StoredRoutines.tpl');
+        $template->setPair('date', date("Y-m-d H:i"));
+        $template->setPair('functions', $str);
+        $template->write(OUTPUT_PATH . CLASSES_PATH . 'class.StoredRoutines.php');
     }
 
     /**
@@ -504,8 +665,28 @@ class Generator
     static private function getFields($table)
     {
         $sql = 'DESC ' . $table;
-        error_log($sql);
         return QueryExecutor::execute(new SqlQuery($sql));
+    }
+
+    static private function getRoutineParameters($routineName)
+    {
+        $sql = 'SELECT * ';
+        $sql .= 'FROM information_schema.parameters ';
+        $sql .= 'WHERE SPECIFIC_SCHEMA = "' . ConnectionProperty::getDatabase() . '" AND SPECIFIC_NAME = "' . $routineName . '"';
+        $params = QueryExecutor::execute(new SqlQuery($sql));
+        $paramArray = array();
+        for ($i = 0; $i < count($params); $i++)
+        {
+            $paramName = Inflector::variable($params[$i]['PARAMETER_NAME']);
+            $paramMode = $params[$i]['PARAMETER_MODE'];
+            $paramMySQLType = $params[$i]['DATA_TYPE'];
+            $paramPHPType = self::convertMySQLTypeToPHPType($paramMySQLType);
+            $paramArray[$i]['Name'] = $paramName;
+            $paramArray[$i]['Mode'] = $paramMode;
+            $paramArray[$i]['PHPType'] = $paramPHPType;
+            $paramArray[$i]['MySQLType'] = $paramMySQLType;
+        }
+        return $paramArray;
     }
 
     static private function initialize()
@@ -531,7 +712,6 @@ class Generator
 
     static private function isColumnTypeNumber($columnType)
     {
-        echo $columnType . '<br/>';
         if (strtolower(substr($columnType, 0, 3)) == 'int' || strtolower(substr($columnType, 0, 7)) == 'tinyint')
         {
             return true;

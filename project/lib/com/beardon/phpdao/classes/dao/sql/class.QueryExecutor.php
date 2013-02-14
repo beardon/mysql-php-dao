@@ -7,7 +7,7 @@
  *
  * Original author
  * @author http://phpdao.com
- * 
+ *
  * Revision 2.7
  * @author Aaron Bean <aaron.bean@beardon.com>
  */
@@ -15,7 +15,7 @@ class QueryExecutor
 {
 
     /**
-     * @param string $sqlQuery
+     * @param SqlQuery $sqlQuery
      * @return array query results
      * @throws Exception
      */
@@ -49,7 +49,11 @@ class QueryExecutor
         return $tab;
     }
 
-
+    /**
+     * @param SqlQuery $sqlQuery
+     * @return int number of affected rows
+     * @throws Exception
+     */
     public static function executeUpdate($sqlQuery)
     {
         $transaction = Transaction::getCurrentTransaction();
@@ -69,6 +73,10 @@ class QueryExecutor
         return mysql_affected_rows();
     }
 
+    /**
+     * @param SqlQuery $sqlQuery
+     * @return int insert id
+     */
     public static function executeInsert($sqlQuery)
     {
         QueryExecutor::executeUpdate($sqlQuery);
@@ -76,12 +84,12 @@ class QueryExecutor
     }
 
     /**
-     * Wykonaniew zapytania do bazy
-     *
-     * @param sqlQuery obiekt typu SqlQuery
-     * @return wynik zapytania
+     * @param SqlQuery $sqlQuery
+     * @param mixed $fieldIndex
+     * @return string
+     * @throws Exception
      */
-    public static function queryForString($sqlQuery)
+    public static function queryForString($sqlQuery, $fieldIndex = 0)
     {
         $transaction = Transaction::getCurrentTransaction();
         if (!$transaction)
@@ -97,9 +105,7 @@ class QueryExecutor
             throw new Exception(mysql_error());
         }
         $row = mysql_fetch_array($result);
-        return $row[0];
+        return $row[$fieldIndex];
     }
 
 }
-
-?>
