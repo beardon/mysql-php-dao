@@ -7,6 +7,6 @@
  * To change this template use File | Settings | File Templates.
  */
 
-require_once('classes/class.Generator.php');
+require_once('classes/Generator.php');
 
 Generator::generate();

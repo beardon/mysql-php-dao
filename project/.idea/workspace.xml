@@ -2,27 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0533e961-d09c-461e-a625-fb8905041a62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/templates/StoredRoutines.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/core/class.ArrayList.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/core/class.ArrayList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.Connection.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.Connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionFactory.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionProperty.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionProperty.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.QueryExecutor.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.QueryExecutor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.SqlQuery.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.SqlQuery.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.Transaction.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.Transaction.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\resources\templates\include_dao.tpl" afterPath="$PROJECT_DIR$/resources/templates/IncludeDAO.tpl" />
+      <change type="NEW" beforePath="" afterPath="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/course/CourseHelper.php" />
+      <change type="DELETED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\libraries" afterPath="" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\class.Generator.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\class.Template.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Template.php" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\core\class.ArrayList.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/core/ArrayList.php" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.Connection.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/Connection.php" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.ConnectionFactory.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/ConnectionFactory.php" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.ConnectionProperty.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/ConnectionProperty.php" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.QueryExecutor.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/QueryExecutor.php" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.SqlQuery.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/SqlQuery.php" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.Transaction.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/Transaction.php" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\generate.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/DoGenerate.php" />
+      <change type="MOVED" beforePath="E:\PHPDAO\project\resources\templates\IncludeDAO.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAOIncludes.tpl" />
     </list>
-    <list id="7dd10e4d-b411-4ee1-80ea-6a691b4059d3" name="Project Settings" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list id="7dd10e4d-b411-4ee1-80ea-6a691b4059d3" name="Project Settings" comment="" />
     <ignored path="PHPDAO.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/lib.Generator.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360703898332" ignored="false" />
-    <file path="/a.dummy" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360866853194" ignored="false" />
+    <file path="/a.dummy" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964885727" ignored="false" />
     <file path="/generate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776021309" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.AccountbudgetDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
-    <file path="E:/WEBS/www.osufst.org/portal/report/student_transcript.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709809936" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/report/student_transcript.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964526023" ignored="false" />
     <file path="/student_transcript.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360709499478" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/class.PersonHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360868749504" ignored="false" />
     <file path="/class.PersonHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360868660951" ignored="false" />
@@ -177,7 +178,7 @@
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.Xxinvoice2DAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.XxapprovestampDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.WaitinglistDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
-    <file path="E:/WEBS/www.osufst.org/portal/report/student_transcript2.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360868688478" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/report/student_transcript2.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964536098" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/include_dao.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360863892235" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.OrgmembershiphistoryviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591901" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dao/class.PaymenteventtotalviewDAO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360776591900" ignored="false" />
@@ -764,7 +765,7 @@
     <file path="/class.Transaction.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360787558715" ignored="false" />
     <file path="/class.SqlQuery.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360785795917" ignored="false" />
     <file path="/class.Connection.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360785938767" ignored="false" />
-    <file path="E:/WEBS/www.osufst.org/portal/event/event_list.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360868178226" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/event/event_list.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964297695" ignored="false" />
     <file path="/event_list.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360864342769" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ApproveviewDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360864242139" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.AuthlogviewDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360864242141" ignored="false" />
@@ -833,7 +834,97 @@
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.OrganizationviewDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360864242145" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.OrgmembershiphistoryviewDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360864242145" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.PaymenteventtotalviewDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360864242145" ignored="false" />
-    <file path="/student_transcript2.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360868683042" ignored="false" />
+    <file path="/student_transcript2.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962070703" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/User.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360961552116" ignored="false" />
+    <file path="/User.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963550005" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib.joomla.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964122948" ignored="false" />
+    <file path="/lib.joomla.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963031515" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/EDirectoryExtHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962188880" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/CertificateLib.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963851139" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/report/ifsac_certificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964434866" ignored="false" />
+    <file path="/ifsac_certificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360961939163" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/report/qr_verify_certificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964472258" ignored="false" />
+    <file path="/qr_verify_certificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360961953810" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/lib.TokenHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962321079" ignored="false" />
+    <file path="/lib.TokenHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962096935" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/person/User.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962154577" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/account/User.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963552166" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/joomla/plugins/fst_authentication/2.5/fst.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962437934" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/lib.UserHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962266266" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/account/AccountHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963501963" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/conference/ConferenceDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963597064" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/course/CourseDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963621912" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/CourseHelperDeprecated.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962725556" ignored="false" />
+    <file path="/CourseDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962754749" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/api/createUser.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964657697" ignored="false" />
+    <file path="/createUser.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963143641" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/api/deleteUser.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964672257" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/api/verifyUser.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964675657" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/footprint.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964154348" ignored="false" />
+    <file path="/footprint.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964149041" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/EventDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962926284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/EventHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360962926284" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/email/EventDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963005536" ignored="false" />
+    <file path="/EventDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963003762" ignored="false" />
+    <file path="/AccountHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963104186" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib.facebook.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964103910" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/class.database.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/facebook/authorize.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964307859" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib.twitter.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/terminal_services.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964626874" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/facebook/index.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964326469" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/tools.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/specialist/index.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/staff/index.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964553169" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/staff/staff_main.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/staff/ts_fullscreen.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964579226" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/staff/ts_windowed.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964587017" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/class.ldap.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/payment/payment_lib.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964386133" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/class.mysql.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/pdf/PdfBasicCertificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963491794" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/pdf/PdfCertificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/pdf/PdfIfsacCertificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963805084" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/pdf/PdfOtterCertificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963820315" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/callback.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964603743" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/payment/pay_print_unique.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964370760" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/payment/pay_test.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/account/EDirectoryExtHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963525964" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/event/EventDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963750519" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/joomla/JoomlaDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/libraries/PersonLib.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963880459" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/FSTdb_lib.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295233" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/account/TokenHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963539733" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/ss/classes/class.Edirectory.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295234" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/login.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295234" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/instructor/index.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295234" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/logout.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295234" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib.bitly.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963295234" ignored="false" />
+    <file path="/PdfBasicCertificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963480944" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/account/AccountDisplay.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963504843" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/account/AuthenticationType.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963510171" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/account/EDirectoryExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964031741" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/account/Token.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963529164" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/account/UserHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963557494" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/certification/Certification.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963580662" ignored="false" />
+    <file path="/Certification.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963575487" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/certification/CertificationAccreditor.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963586094" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/certification/CertificationLevel.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963588663" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/conference/ConferenceHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963602351" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/course/CourseHelperDeprecated.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963738985" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/email/EmailHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963742337" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/event/EventHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963758402" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/event/EventHelperDeprecated.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963762322" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/network/NetworkExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964060271" ignored="false" />
+    <file path="/PdfIfsacCertificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963796308" ignored="false" />
+    <file path="/PdfOtterCertificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963818471" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/person/PersonHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963829995" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/registration/RegistrationHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963840611" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/ss/classes/account/class.Edirectory.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963966398" ignored="false" />
+    <file path="/EDirectoryExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964030836" ignored="false" />
+    <file path="/NetworkExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964057830" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/test.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964642707" ignored="false" />
+    <file path="/Generator.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964999825" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -891,26 +982,7 @@
     <favorites_list name="PHPDAO" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="class.Generator.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="231" column="81" selection-start="9067" selection-end="9067" vertical-scroll-proportion="0.02014218">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class.QueryExecutor.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.QueryExecutor.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="68" selection-start="2147" selection-end="2147" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -932,6 +1004,8 @@
         <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionFactory.php" />
         <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.QueryExecutor.php" />
         <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php" />
+        <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php" />
+        <option value="$PROJECT_DIR$/resources/templates/DAOIncludes.tpl" />
       </list>
     </option>
   </component>
@@ -988,6 +1062,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1192,7 +1267,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1208,8 +1282,8 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1315,6 +1389,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1323,13 +1398,12 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.5535714" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.43861607" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24866596" sideWeight="0.55790645" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24866596" sideWeight="0.43429846" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33035713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1391,105 +1465,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="81" selection-start="9067" selection-end="9067" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.QueryExecutor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="68" selection-start="2147" selection-end="2147" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="27" selection-start="377" selection-end="377" vertical-scroll-proportion="0.52737224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/org/cakephp/lib/Cake/Utility/Inflector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="552" column="19" selection-start="17531" selection-end="17531" vertical-scroll-proportion="-351.1154">
-          <folding>
-            <element signature="e#7#578#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/generate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="43" selection-start="53" selection-end="53" vertical-scroll-proportion="-1.9615384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/core/class.ArrayList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="6" selection-end="183" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.IntelliJIdea12/config/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="9" selection-start="5421" selection-end="5421" vertical-scroll-proportion="1.0168225" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/DAO.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="37" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.50364965" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="21" selection-start="672" selection-end="672" vertical-scroll-proportion="-17.653847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="330" selection-end="330" vertical-scroll-proportion="-13.538462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionProperty.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="1" selection-start="763" selection-end="763" vertical-scroll-proportion="-20.76923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.Transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="27" selection-start="1398" selection-end="1398" vertical-scroll-proportion="-11.923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.SqlQuery.php">
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/SqlQuery.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="17" selection-start="562" selection-end="562" vertical-scroll-proportion="-7.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.QueryExecutor.php">
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/QueryExecutor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="68" selection-start="2147" selection-end="2147" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php">
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/Transaction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="81" selection-start="9067" selection-end="9067" vertical-scroll-proportion="0.02014218">
+        <state line="68" column="5" selection-start="1398" selection-end="1398" vertical-scroll-proportion="-24.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="597" column="129" selection-start="24557" selection-end="24557" vertical-scroll-proportion="-3.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DAO.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="37" selection-start="2822" selection-end="2822" vertical-scroll-proportion="-81.07692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DAO_with_complex_pk.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DAOExt.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DAOFactory.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DAOIncludes.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="26" selection-start="434" selection-end="434" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DAOView.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DTO.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DTOExt.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/IDAO.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/IDAO_with_complex_pk.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/IDAOView.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/StoredRoutines.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
