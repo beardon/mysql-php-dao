@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0533e961-d09c-461e-a625-fb8905041a62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/course/CourseHelper.php" />
-      <change type="DELETED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\libraries" afterPath="" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\class.Generator.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\class.Template.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Template.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\core\class.ArrayList.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/core/ArrayList.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.Connection.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/Connection.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.ConnectionFactory.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/ConnectionFactory.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.ConnectionProperty.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/ConnectionProperty.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.QueryExecutor.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/QueryExecutor.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.SqlQuery.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/SqlQuery.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\classes\dao\sql\class.Transaction.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/Transaction.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\lib\com\beardon\phpdao\generate.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/DoGenerate.php" />
-      <change type="MOVED" beforePath="E:\PHPDAO\project\resources\templates\IncludeDAO.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAOIncludes.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php" afterPath="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php" />
     </list>
-    <list id="7dd10e4d-b411-4ee1-80ea-6a691b4059d3" name="Project Settings" comment="" />
+    <list id="7dd10e4d-b411-4ee1-80ea-6a691b4059d3" name="Project Settings" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="PHPDAO.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/lib.Generator.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360703898332" ignored="false" />
@@ -765,7 +755,7 @@
     <file path="/class.Transaction.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360787558715" ignored="false" />
     <file path="/class.SqlQuery.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360785795917" ignored="false" />
     <file path="/class.Connection.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360785938767" ignored="false" />
-    <file path="E:/WEBS/www.osufst.org/portal/event/event_list.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964297695" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/portal/event/event_list.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360965689018" ignored="false" />
     <file path="/event_list.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360864342769" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.ApproveviewDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360864242139" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/phpdao/classes/dto/class.AuthlogviewDTO.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360864242141" ignored="false" />
@@ -913,18 +903,19 @@
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/conference/ConferenceHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963602351" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/course/CourseHelperDeprecated.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963738985" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/email/EmailHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963742337" ignored="false" />
-    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/event/EventHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963758402" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/event/EventHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360965906241" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/event/EventHelperDeprecated.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963762322" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/network/NetworkExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964060271" ignored="false" />
     <file path="/PdfIfsacCertificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963796308" ignored="false" />
     <file path="/PdfOtterCertificate.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963818471" ignored="false" />
-    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/person/PersonHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963829995" ignored="false" />
-    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/registration/RegistrationHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963840611" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/person/PersonHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360965904650" ignored="false" />
+    <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/fstdb/classes/registration/RegistrationHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360965900881" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/php/lib/com/beardon/ss/classes/account/class.Edirectory.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360963966398" ignored="false" />
     <file path="/EDirectoryExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964030836" ignored="false" />
     <file path="/NetworkExt.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964057830" ignored="false" />
     <file path="E:/WEBS/www.osufst.org/portal/test.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964642707" ignored="false" />
-    <file path="/Generator.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360964999825" ignored="false" />
+    <file path="/Generator.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1361293829418" ignored="false" />
+    <file path="/RegistrationHelper.php" changelist="0533e961-d09c-461e-a625-fb8905041a62" time="1360965899329" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -939,7 +930,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -974,6 +964,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -982,7 +973,17 @@
     <favorites_list name="PHPDAO" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Generator.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="332" column="75" selection-start="12917" selection-end="12917" vertical-scroll-proportion="0.42545456">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -1004,8 +1005,8 @@
         <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionFactory.php" />
         <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.QueryExecutor.php" />
         <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php" />
-        <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php" />
         <option value="$PROJECT_DIR$/resources/templates/DAOIncludes.tpl" />
+        <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php" />
       </list>
     </option>
   </component>
@@ -1062,7 +1063,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1267,6 +1267,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1282,8 +1283,8 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1385,11 +1386,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1398,8 +1399,8 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24866596" sideWeight="0.55790645" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24866596" sideWeight="0.43429846" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24813233" sideWeight="0.37527838" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24813233" sideWeight="0.28730512" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1486,93 +1487,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="597" column="129" selection-start="24557" selection-end="24557" vertical-scroll-proportion="-3.6153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/DAO.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="37" selection-start="2822" selection-end="2822" vertical-scroll-proportion="-81.07692">
-          <folding />
-        </state>
+        <state line="124" column="37" selection-start="2822" selection-end="2822" vertical-scroll-proportion="-81.07692" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/DAO_with_complex_pk.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/DAOExt.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/DAOFactory.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/DAOIncludes.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="434" selection-end="434" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
+        <state line="11" column="26" selection-start="434" selection-end="434" vertical-scroll-proportion="-7.1923075" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/DAOView.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/DTO.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/DTOExt.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/IDAO.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/IDAO_with_complex_pk.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/IDAOView.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/StoredRoutines.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/com/beardon/phpdao/classes/Generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="332" column="75" selection-start="12917" selection-end="12917" vertical-scroll-proportion="0.42545456">
           <folding />
         </state>
       </provider>

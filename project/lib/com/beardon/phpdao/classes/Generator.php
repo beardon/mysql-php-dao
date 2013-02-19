@@ -335,15 +335,18 @@ class Generator
                     $pk_type = $columnType;
                 } else
                 {
-                    $insertFields .= $fieldName . ", ";
-                    $updateFields .= $fieldName . " = ?, ";
-                    $questionMarks .= "?, ";
-                    if (self::isColumnTypeNumber($columnType))
+                    if ($columnType != 'timestamp')
                     {
-                        $parameterSetter .= "\t\t\$sqlQuery->setNumber($" . $tableDTOVariableName . "->" . $memberName . ");\n";
-                    } else
-                    {
-                        $parameterSetter .= "\t\t\$sqlQuery->set($" . $tableDTOVariableName . "->" . $memberName . ");\n";
+                        $insertFields .= $fieldName . ", ";
+                        $updateFields .= $fieldName . " = ?, ";
+                        $questionMarks .= "?, ";
+                        if (self::isColumnTypeNumber($columnType))
+                        {
+                            $parameterSetter .= "\t\t\$sqlQuery->setNumber($" . $tableDTOVariableName . "->" . $memberName . ");\n";
+                        } else
+                        {
+                            $parameterSetter .= "\t\t\$sqlQuery->set($" . $tableDTOVariableName . "->" . $memberName . ");\n";
+                        }
                     }
                     $queryByFunction .= self::createQueryByFunction($tableName, $fieldName, ucfirst($memberName), $columnType, $tableDTOExtName);
                     $deleteByFunction .= self::createDeleteByFunction($tableName, $fieldName, ucfirst($memberName), $columnType);
