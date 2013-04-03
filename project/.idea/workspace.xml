@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0533e961-d09c-461e-a625-fb8905041a62" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DAOExt.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAOExt.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DAOFactory.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAOFactory.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DAOView.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAOView.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DTO.tpl" afterPath="$PROJECT_DIR$/resources/templates/DTO.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DTOExt.tpl" afterPath="$PROJECT_DIR$/resources/templates/DTOExt.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/IDAO.tpl" afterPath="$PROJECT_DIR$/resources/templates/IDAO.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/IDAOView.tpl" afterPath="$PROJECT_DIR$/resources/templates/IDAOView.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/IDAO_with_complex_pk.tpl" afterPath="$PROJECT_DIR$/resources/templates/IDAO_with_complex_pk.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/StoredRoutines.tpl" afterPath="$PROJECT_DIR$/resources/templates/StoredRoutines.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DAO.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAO.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/DAO_with_complex_pk.tpl" afterPath="$PROJECT_DIR$/resources/templates/DAO_with_complex_pk.tpl" />
     </list>
     <list id="7dd10e4d-b411-4ee1-80ea-6a691b4059d3" name="Project Settings" comment="" />
     <ignored path="PHPDAO.iws" />
@@ -989,8 +982,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.SqlQuery.php" />
-        <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.Transaction.php" />
         <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.ConnectionFactory.php" />
         <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/dao/sql/class.QueryExecutor.php" />
         <option value="$PROJECT_DIR$/lib/com/beardon/phpdao/classes/class.Generator.php" />
@@ -1005,6 +996,8 @@
         <option value="$PROJECT_DIR$/resources/templates/DAOView.tpl" />
         <option value="$PROJECT_DIR$/resources/templates/DAOFactory.tpl" />
         <option value="$PROJECT_DIR$/resources/templates/DAOExt.tpl" />
+        <option value="$PROJECT_DIR$/resources/templates/DAO_with_complex_pk.tpl" />
+        <option value="$PROJECT_DIR$/resources/templates/DAO.tpl" />
       </list>
     </option>
   </component>
@@ -1281,8 +1274,8 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1396,8 +1389,8 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24759872" sideWeight="0.32516703" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24759872" sideWeight="0.66703784" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2470651" sideWeight="0.33073497" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2470651" sideWeight="0.66146994" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1492,20 +1485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/DAO.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="29" selection-start="1061" selection-end="1061" vertical-scroll-proportion="-30.73077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/DAO_with_complex_pk.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/StoredRoutines.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.120567374">
@@ -1541,13 +1520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/DTO.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="0.120567374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/DAOView.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="0.120567374">
@@ -1572,6 +1544,27 @@
     <entry file="file://$PROJECT_DIR$/resources/templates/DAOExt.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.120567374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DAO_with_complex_pk.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DAO.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.120567374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/DTO.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="0.120567374">
           <folding />
         </state>
       </provider>
