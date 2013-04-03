@@ -4,7 +4,6 @@
  * This class will not be overwritten.
  *
  * @version 2.7
- * @date ${date}
  *
  * @author Aaron Bean <aaron.bean@beardon.com>
  */

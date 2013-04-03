@@ -3,7 +3,6 @@
  * DAOFactory
  *
  * @version 2.7
- * @date ${date}
  *
  * Original author
  * @author http://phpdao.com
