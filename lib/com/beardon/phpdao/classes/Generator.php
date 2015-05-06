@@ -440,10 +440,6 @@ class Generator
         {
             $tableName = $tables[$i][0];
             $tableClassBase = Inflector::classify($tableName);
-            if ($tableClassBase[strlen($tableClassBase) - 1] == 's')
-            {
-                $tableClassBase = substr($tableClassBase, 0, strlen($tableClassBase) - 1);
-            }
             $tableDTOName = $tableClassBase . 'DTO';
             $tableDTOExtName = $tableDTOName . 'Ext';
             $template = new Template(SOURCE_TEMPLATES_PATH . 'DTOExt.tpl');
@@ -468,10 +464,6 @@ class Generator
         {
             $tableName = $tables[$i][0];
             $tableClassBase = Inflector::classify($tableName);
-            if ($tableClassBase[strlen($tableClassBase) - 1] == 's')
-            {
-                $tableClassBase = substr($tableClassBase, 0, strlen($tableClassBase) - 1);
-            }
             $tableDTOName = $tableClassBase . 'DTO';
             $template = new Template(SOURCE_TEMPLATES_PATH . 'DTO.tpl');
             $template->setPair('class_name', $tableDTOName);
