@@ -34,6 +34,11 @@ class SqlQuery
      */
     public function setString($value)
     {
+        if ($value === null)
+        {
+            $this->params[$this->idx++] = "null";
+            return;
+        }
         $value = mysql_escape_string($value);
         $this->params[$this->idx++] = "'" . $value . "'";
     }
