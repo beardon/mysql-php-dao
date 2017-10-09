@@ -39,7 +39,7 @@ class SqlQuery
             $this->params[$this->idx++] = "null";
             return;
         }
-        $value = mysql_escape_string($value);
+//        $value = mysqli::real_escape_string($value);
         $this->params[$this->idx++] = "'" . $value . "'";
     }
 

@@ -7,7 +7,7 @@
  *
  * Original author
  * @author http://phpdao.com
- * 
+ *
  * Revision 2.7
  * @author Aaron Bean <aaron.bean@beardon.com>
  */
@@ -17,27 +17,27 @@ class ConnectionFactory
     /**
      * Get connection
      *
-     * @return resource
+     * @return mysqli
      * @throws Exception
      */
     static public function getConnection()
     {
-        $conn = mysql_connect(ConnectionProperty::getHost(), ConnectionProperty::getUser(), ConnectionProperty::getPassword());
-        mysql_select_db(ConnectionProperty::getDatabase());
-        if (!$conn)
+        $link = mysqli_connect(ConnectionProperty::getHost(), ConnectionProperty::getUser(), ConnectionProperty::getPassword());
+        mysqli_select_db($link, ConnectionProperty::getDatabase());
+        if (!$link)
         {
             throw new Exception('could not connect to database');
         }
-        return $conn;
+        return $link;
     }
 
     /**
      * Close connection
      *
-     * @param resource $connection
+     * @param Connection $connection
      */
     static public function close($connection)
     {
-        mysql_close($connection);
+        mysqli_close($connection->link);
     }
 }

@@ -13,27 +13,27 @@
  */
 class Connection
 {
-    /** @var Connection */
-    private $connection;
+    /** @var mysqli */
+    public $link;
 
     public function Connection()
     {
-        $this->connection = ConnectionFactory::getConnection();
+        $this->link = ConnectionFactory::getConnection();
     }
 
     public function close()
     {
-        ConnectionFactory::close($this->connection);
+        ConnectionFactory::close($this);
     }
 
     /**
      * Execute SQL with current connection
      *
      * @param string $sql
-     * @return resource
+     * @return bool|mysqli_result
      */
     public function executeQuery($sql)
     {
-        return mysql_query($sql, $this->connection);
+        return mysqli_query($this->link, $sql);
     }
 }
